@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { useRef } from "react"
 import { useInView } from "framer-motion"
+import Link from "next/link"
 
 export function AboutLocation() {
   const ref = useRef(null)
@@ -65,13 +66,15 @@ export function AboutLocation() {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.8, delay: 0.5 }}
             >
-              <Button
-                variant="outline"
-                className="rounded-full group border-2 bg-white hover:bg-forest hover:text-white hover:border-forest transition-all duration-500 px-8 py-6 text-lg shadow-lg"
-              >
-                Zobacz okolicę
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-2 transition-transform duration-300" />
-              </Button>
+              <Link href="/okolica">
+                <Button
+                  variant="outline"
+                  className="rounded-full group border-2 bg-white hover:bg-forest hover:text-white hover:border-forest transition-all duration-500 px-8 py-6 text-lg shadow-lg"
+                >
+                  Zobacz okolicę
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-2 transition-transform duration-300" />
+                </Button>
+              </Link>
             </motion.div>
           </motion.div>
         </div>
