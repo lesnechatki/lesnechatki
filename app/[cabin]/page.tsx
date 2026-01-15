@@ -17,8 +17,9 @@ export async function generateStaticParams() {
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://lesnechatki.com"
 
-export async function generateMetadata({ params }: { params: { cabin: string } }): Promise<Metadata> {
-  const cabin = cabinsData[params.cabin]
+export async function generateMetadata({ params }: { params: Promise<{ cabin: string }> }): Promise<Metadata> {
+  const { cabin: cabinSlug } = await params
+  const cabin = cabinsData[cabinSlug]
 
   if (!cabin) {
     return {
@@ -70,8 +71,9 @@ export async function generateMetadata({ params }: { params: { cabin: string } }
   }
 }
 
-export default function CabinPage({ params }: { params: { cabin: string } }) {
-  const cabin = cabinsData[params.cabin]
+export default async function CabinPage({ params }: { params: Promise<{ cabin: string }> }) {
+  const { cabin: cabinSlug } = await params
+  const cabin = cabinsData[cabinSlug]
 
   if (!cabin) {
     notFound()
