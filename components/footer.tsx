@@ -49,7 +49,12 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-white/20 text-center text-white/60 text-sm">
-          <p>© 2026 Leśne Chatki. Wszystkie prawa zastrzeżone.</p>
+          <p className="mb-2">© 2026 Leśne Chatki. Wszystkie prawa zastrzeżone.</p>
+          <p>
+            <Link href="/polityka-prywatnosci" className="text-white/60 hover:text-white/80 transition-colors underline">
+              Polityka Prywatności
+            </Link>
+          </p>
         </div>
       </div>
     </footer>

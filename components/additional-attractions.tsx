@@ -6,12 +6,12 @@ const attractions = [
     icon: Flame,
     name: "Ognisko",
     price: "100 zł",
-    description: "Wieczór przy ognisku z drewnem i rozpalką",
+    description: "W cenie misa ogniskowa, drewno, kijki do kiełbasek",
   },
   {
     icon: Truck,
     name: "Kulig",
-    price: "350 zł / wóz",
+    price: "350 zł / wóz / max 10 osób",
     description: "Tradycyjna przejażdżka kulligiem",
   },
   {

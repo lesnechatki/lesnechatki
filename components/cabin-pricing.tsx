@@ -134,6 +134,9 @@ export function CabinPricing({ cabin }: CabinPricingProps) {
               <div className="flex justify-center">
                 <Button
                   size="lg"
+                  onClick={() => {
+                    window.location.href = "/#kontakt"
+                  }}
                   className="bg-forest hover:bg-forest-light text-white rounded-full px-12 py-6 text-lg group shadow-lg hover:shadow-xl hover:shadow-forest/20 transition-all duration-300"
                 >
                   Zarezerwuj termin

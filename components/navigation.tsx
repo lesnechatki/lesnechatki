@@ -19,11 +19,11 @@ export function Navigation() {
   }, [])
 
   const menuItems = [
-    { href: "#home", label: "Start" },
-    { href: "#chatki", label: "Nasze Chatki" },
-    { href: "#cennik", label: "Cennik" },
-    { href: "#okolica", label: "Okolica" },
-    { href: "#kontakt", label: "Kontakt" },
+    { href: "/#home", label: "Start" },
+    { href: "/#chatki", label: "Nasze Chatki" },
+    { href: "/#cennik", label: "Cennik" },
+    { href: "/#okolica", label: "Okolica" },
+    { href: "/#kontakt", label: "Kontakt" },
   ]
 
   return (
@@ -80,7 +80,17 @@ export function Navigation() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
-              <Button className="bg-forest hover:bg-forest/90 text-white rounded-full px-8 shadow-lg hover:shadow-xl hover:shadow-forest/20 transition-all duration-300 hover:scale-105">
+              <Button
+                onClick={() => {
+                  const contactElement = document.getElementById("kontakt")
+                  if (contactElement) {
+                    contactElement.scrollIntoView({ behavior: "smooth" })
+                  } else {
+                    window.location.href = "/#kontakt"
+                  }
+                }}
+                className="bg-forest hover:bg-forest/90 text-white rounded-full px-8 shadow-lg hover:shadow-xl hover:shadow-forest/20 transition-all duration-300 hover:scale-105"
+              >
                 Zarezerwuj
               </Button>
             </motion.div>
@@ -123,7 +133,20 @@ export function Navigation() {
                     </Link>
                   </motion.div>
                 ))}
-                <Button className="w-full bg-forest hover:bg-forest/90 text-white rounded-full mt-4">Zarezerwuj</Button>
+                <Button
+                  onClick={() => {
+                    setIsOpen(false)
+                    const contactElement = document.getElementById("kontakt")
+                    if (contactElement) {
+                      contactElement.scrollIntoView({ behavior: "smooth" })
+                    } else {
+                      window.location.href = "/#kontakt"
+                    }
+                  }}
+                  className="w-full bg-forest hover:bg-forest/90 text-white rounded-full mt-4"
+                >
+                  Zarezerwuj
+                </Button>
               </div>
             </motion.div>
           )}

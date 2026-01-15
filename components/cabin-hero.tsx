@@ -100,6 +100,9 @@ export function CabinHero({ cabin }: CabinHeroProps) {
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
               <Button
                 size="lg"
+                onClick={() => {
+                  window.location.href = "/#kontakt"
+                }}
                 className="bg-forest hover:bg-forest-light text-white rounded-full px-12 py-8 text-lg group shadow-2xl hover:shadow-forest/30 transition-all duration-500"
               >
                 Zarezerwuj termin
@@ -110,6 +113,9 @@ export function CabinHero({ cabin }: CabinHeroProps) {
               <Button
                 size="lg"
                 variant="outline"
+                onClick={() => {
+                  window.location.href = "/#kontakt"
+                }}
                 className="rounded-full px-12 py-8 text-lg glass-effect border-2 border-white/50 text-white hover:bg-white hover:text-forest shadow-2xl transition-all duration-500 bg-transparent"
               >
                 Skontaktuj się

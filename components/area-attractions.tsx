@@ -1,14 +1,16 @@
 import { Check } from "lucide-react"
 
 const attractions = [
-  { name: "Szlaki piesze i rowerowe", distance: "" },
-  { name: "Złoty Groń", distance: "4 km" },
+  { name: "Szlaki piesze i rowerowe", distance: "start praktycznie spod domku" },
+  { name: "Stoki narciarskie Złoty Groń i Zagroń", distance: "4 km" },
   { name: "Park Wodny Olza", distance: "4 km" },
-  { name: "Centrum Koronki", distance: "1 km" },
-  { name: "Karczma i bacówka", distance: "1 km" },
-  { name: "Ochodzita", distance: "3 km" },
-  { name: "Base Camp", distance: "5,5 km" },
-  { name: "Trójstyk granic", distance: "10 km" },
+  { name: "Centrum Koronki Koniakowskiej", distance: "1 km" },
+  { name: "Karczma regionalna i bacówka", distance: "1 km" },
+  { name: "Ochodzita", distance: "3 km", note: "najpiękniejsze zachody słońca" },
+  { name: "Złoty Groń", distance: "3,5 km", note: "kolej linowa, punkt widokowy" },
+  { name: "Base Camp", distance: "5,5 km", note: "park linowy, paintball" },
+  { name: "Trasy Narciarstwa Biegowego", distance: "10 km" },
+  { name: "Trójstyk granic PL–CZ–SK", distance: "10 km" },
   { name: "Barania Góra", distance: "13 km" },
 ]
 
@@ -28,14 +30,21 @@ export function AreaAttractions() {
 
           <div className="grid sm:grid-cols-2 gap-4">
             {attractions.map((attraction, index) => (
-              <div key={index} className="flex items-center gap-3 p-4 bg-background rounded-2xl">
-                <div className="w-6 h-6 rounded-full bg-forest/10 flex items-center justify-center flex-shrink-0">
-                  <Check className="w-4 h-4 text-forest" strokeWidth={2.5} />
+              <div key={index} className="p-4 bg-background rounded-2xl">
+                <div className="flex items-center gap-3">
+                  <div className="w-6 h-6 rounded-full bg-forest/10 flex items-center justify-center flex-shrink-0">
+                    <Check className="w-4 h-4 text-forest" strokeWidth={2.5} />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <span className="text-foreground/80 font-medium block">{attraction.name}</span>
+                    {attraction.note && (
+                      <span className="text-xs text-muted-foreground block mt-1">{attraction.note}</span>
+                    )}
+                  </div>
+                  {attraction.distance && (
+                    <span className="text-sm text-muted-foreground ml-auto whitespace-nowrap">{attraction.distance}</span>
+                  )}
                 </div>
-                <span className="text-foreground/80 font-medium">{attraction.name}</span>
-                {attraction.distance && (
-                  <span className="text-sm text-muted-foreground ml-auto">{attraction.distance}</span>
-                )}
               </div>
             ))}
           </div>

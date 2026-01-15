@@ -68,7 +68,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
         >
-          Wiemy, że najlepsze wspomnienia tworzą się wtedy, gdy zwalniamy i doświadczamy miejsca wszystkimi zmysłami
+          Wiemy, że najlepsze wspomnienia tworzą się wtedy, gdy zwalniamy i doświadczamy miejsca wszystkimi zmysłami. Dlatego nasze domki stoją na dużej, zielonej działce z prywatnym lasem. Miejsce stworzone do zwolnienia tempa, spacerów między drzewami i poranków bez planu.
         </motion.p>
 
         <motion.div
@@ -80,6 +80,7 @@ export function Hero() {
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
             <Button
               size="lg"
+              onClick={() => document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" })}
               className="bg-forest hover:bg-forest-light text-white rounded-full px-12 py-8 text-lg group shadow-2xl hover:shadow-forest/30 transition-all duration-500"
             >
               Zarezerwuj termin
@@ -90,6 +91,7 @@ export function Hero() {
             <Button
               size="lg"
               variant="outline"
+              onClick={() => document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" })}
               className="rounded-full px-12 py-8 text-lg glass-effect border-2 border-white/50 text-white hover:bg-white hover:text-forest shadow-2xl transition-all duration-500 bg-transparent"
             >
               Skontaktuj się
