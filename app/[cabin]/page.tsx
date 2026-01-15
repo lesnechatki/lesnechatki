@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation"
 import type { Metadata } from "next"
+import { headers } from "next/headers"
 import { cabinsData } from "@/lib/cabins-data"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
@@ -15,9 +16,12 @@ export async function generateStaticParams() {
   }))
 }
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://lesnechatki.com"
-
 export async function generateMetadata({ params }: { params: Promise<{ cabin: string }> }): Promise<Metadata> {
+  const headersList = await headers()
+  const host = headersList.get("host") || ""
+  const protocol = headersList.get("x-forwarded-proto") || "https"
+  const baseUrl = `${protocol}://${host}`
+
   const { cabin: cabinSlug } = await params
   const cabin = cabinsData[cabinSlug]
 

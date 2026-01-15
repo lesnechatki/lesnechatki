@@ -22,10 +22,7 @@ const inter = Inter({
   preload: true,
 })
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://lesnechatki.com"
-
 export const metadata: Metadata = {
-  metadataBase: new URL(baseUrl),
   title: "Leśne Chatki w Koniakowie | Domki w Beskidach",
   description:
     "Leśne Chatki - miejsce stworzone do zwolnienia tempa, spacerów między drzewami i poranków bez planu. Domki w Koniakowie, najwyżej położonej wsi Beskidu Śląskiego.",
@@ -52,14 +49,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pl_PL",
-    url: baseUrl,
     siteName: "Leśne Chatki w Koniakowie",
     title: "Leśne Chatki w Koniakowie | Domki w Beskidach",
     description:
       "Leśne Chatki - miejsce stworzone do zwolnienia tempa, spacerów między drzewami i poranków bez planu. Domki w Koniakowie, najwyżej położonej wsi Beskidu Śląskiego.",
     images: [
       {
-        url: `${baseUrl}/zdjecie-glowne.webp`,
+        url: "/zdjecie-glowne.webp",
         width: 1200,
         height: 630,
         alt: "Leśne Chatki w Koniakowie",
@@ -71,7 +67,7 @@ export const metadata: Metadata = {
     title: "Leśne Chatki w Koniakowie | Domki w Beskidach",
     description:
       "Leśne Chatki - miejsce stworzone do zwolnienia tempa, spacerów między drzewami i poranków bez planu. Domki w Koniakowie, najwyżej położonej wsi Beskidu Śląskiego.",
-    images: [`${baseUrl}/zdjecie-glowne.webp`],
+    images: ["/zdjecie-glowne.webp"],
   },
   robots: {
     index: true,
@@ -100,9 +96,6 @@ export const metadata: Metadata = {
       },
     ],
     apple: "/apple-icon.png",
-  },
-  alternates: {
-    canonical: baseUrl,
   },
 }
 
