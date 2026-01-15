@@ -24,7 +24,7 @@ export function Hero() {
     >
       <motion.div style={{ y, scale }} className="absolute inset-0 z-0">
         <img
-          src="/images/zdj-c4-99cie-20g-c5-82-c3-b3wne.jpeg"
+          src="/zdjecie-glowne.webp"
           alt="Leśne Chatki w Koniakowie"
           className="w-full h-full object-cover"
         />
