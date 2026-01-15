@@ -99,6 +99,12 @@
   --color-border: var(--border);
   --color-input: var(--input-border);
   --color-ring: var(--accent);
+  
+  /* Custom brand colors */
+  --color-forest: #59826c;
+  --color-forest-light: #6a9a7a;
+  --color-sand: #f5f1e8;
+  
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -351,5 +357,22 @@
   }
   .space-xl {
     margin: var(--space-xl);
+  }
+
+  /* Glass effect utilities */
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .forest-glass {
+    background: rgba(89, 130, 108, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .forest-glass-hover:hover {
+    background: rgba(89, 130, 108, 0.15);
   }
 }
