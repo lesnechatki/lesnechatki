@@ -57,7 +57,7 @@ export function Hero() {
             className="text-6xl md:text-8xl lg:text-9xl font-bold text-white mb-8 text-balance tracking-tight leading-tight"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           >
             Leśne Chatki
             <br />
@@ -67,14 +67,9 @@ export function Hero() {
           </motion.h1>
         </motion.div>
 
-        <motion.p
-          className="text-xl md:text-2xl lg:text-3xl text-white/95 max-w-4xl mx-auto mb-14 leading-relaxed text-pretty font-light"
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
-        >
+        <p className="text-xl md:text-2xl lg:text-3xl text-white/95 max-w-4xl mx-auto mb-14 leading-relaxed text-pretty font-light">
           Wiemy, że najlepsze wspomnienia tworzą się wtedy, gdy zwalniamy i doświadczamy miejsca wszystkimi zmysłami. Dlatego nasze domki stoją na dużej, zielonej działce z prywatnym lasem. Miejsce stworzone do zwolnienia tempa, spacerów między drzewami i poranków bez planu.
-        </motion.p>
+        </p>
 
         <motion.div
           className="flex flex-col sm:flex-row gap-6 justify-center items-center"

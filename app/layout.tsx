@@ -10,12 +10,16 @@ const playfair = Playfair_Display({
   subsets: ["latin"],
   weight: ["400", "600", "700"],
   variable: "--font-heading",
+  display: "swap",
+  preload: true,
 })
 
 const inter = Inter({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   variable: "--font-sans",
+  display: "swap",
+  preload: true,
 })
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://lesnechatki.com"
