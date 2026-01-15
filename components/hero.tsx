@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, ChevronDown } from "lucide-react"
 import { useRef } from "react"
+import Image from "next/image"
 
 export function Hero() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -23,10 +24,14 @@ export function Hero() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-forest/5 to-background"
     >
       <motion.div style={{ y, scale }} className="absolute inset-0 z-0">
-        <img
+        <Image
           src="/zdjecie-glowne.webp"
           alt="Leśne Chatki w Koniakowie"
-          className="w-full h-full object-cover"
+          fill
+          priority
+          quality={90}
+          className="object-cover"
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/15 to-background/90" />
       </motion.div>

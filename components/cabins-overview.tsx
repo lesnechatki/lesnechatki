@@ -5,6 +5,7 @@ import { motion, useInView } from "framer-motion"
 import { Card } from "@/components/ui/card"
 import { useRef } from "react"
 import { ArrowRight } from "lucide-react"
+import Image from "next/image"
 
 const cabins = [
   {
@@ -111,10 +112,14 @@ export function CabinsOverview() {
                         whileHover={{ scale: 1.08 }}
                         transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
                       >
-                        <img
+                        <Image
                           src={cabin.image || "/placeholder.svg"}
-                          alt={cabin.name}
-                          className="w-full h-full object-cover"
+                          alt={`${cabin.name} - Leśne Chatki w Koniakowie`}
+                          fill
+                          quality={85}
+                          className="object-cover"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                          loading="lazy"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-forest/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                       </motion.div>

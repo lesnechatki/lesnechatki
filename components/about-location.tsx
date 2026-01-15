@@ -6,6 +6,7 @@ import { ArrowRight } from "lucide-react"
 import { useRef } from "react"
 import { useInView } from "framer-motion"
 import Link from "next/link"
+import Image from "next/image"
 
 export function AboutLocation() {
   const ref = useRef(null)
@@ -31,12 +32,17 @@ export function AboutLocation() {
             transition={{ duration: 0.8 }}
             className="relative h-[600px] rounded-3xl overflow-hidden shadow-2xl"
           >
-            <motion.img
-              style={{ y: imageY }}
-              src="/koniak-w-beskid-mountains-village-landscape.jpg"
-              alt="Koniaków"
-              className="w-full h-[110%] object-cover"
-            />
+            <motion.div style={{ y: imageY }} className="relative w-full h-[110%]">
+              <Image
+                src="/koniak-w-beskid-mountains-village-landscape.jpg"
+                alt="Koniaków - najwyżej położona wieś Beskidu Śląskiego, Twójwieś"
+                fill
+                quality={85}
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                loading="lazy"
+              />
+            </motion.div>
           </motion.div>
 
           <motion.div

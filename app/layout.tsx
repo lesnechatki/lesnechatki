@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Playfair_Display, Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { CookieConsent } from "@/components/cookie-consent"
+import { StructuredData } from "@/components/structured-data"
 import "./globals.css"
 
 const playfair = Playfair_Display({
@@ -17,11 +18,68 @@ const inter = Inter({
   variable: "--font-sans",
 })
 
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://lesnechatki.com"
+
 export const metadata: Metadata = {
+  metadataBase: new URL(baseUrl),
   title: "Leśne Chatki w Koniakowie | Domki w Beskidach",
   description:
     "Leśne Chatki - miejsce stworzone do zwolnienia tempa, spacerów między drzewami i poranków bez planu. Domki w Koniakowie, najwyżej położonej wsi Beskidu Śląskiego.",
   generator: "v0.app",
+  keywords: [
+    "Koniaków",
+    "Twójwieś",
+    "domki Koniaków",
+    "noclegi Koniaków",
+    "Koniaków Beskidy",
+    "Leśne Chatki",
+    "domki w Beskidach",
+    "noclegi Beskidy Śląskie",
+    "chatki Koniaków",
+  ],
+  authors: [{ name: "Leśne Chatki" }],
+  creator: "Leśne Chatki",
+  publisher: "Leśne Chatki",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    type: "website",
+    locale: "pl_PL",
+    url: baseUrl,
+    siteName: "Leśne Chatki w Koniakowie",
+    title: "Leśne Chatki w Koniakowie | Domki w Beskidach",
+    description:
+      "Leśne Chatki - miejsce stworzone do zwolnienia tempa, spacerów między drzewami i poranków bez planu. Domki w Koniakowie, najwyżej położonej wsi Beskidu Śląskiego.",
+    images: [
+      {
+        url: `${baseUrl}/zdjecie-glowne.webp`,
+        width: 1200,
+        height: 630,
+        alt: "Leśne Chatki w Koniakowie",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Leśne Chatki w Koniakowie | Domki w Beskidach",
+    description:
+      "Leśne Chatki - miejsce stworzone do zwolnienia tempa, spacerów między drzewami i poranków bez planu. Domki w Koniakowie, najwyżej położonej wsi Beskidu Śląskiego.",
+    images: [`${baseUrl}/zdjecie-glowne.webp`],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   icons: {
     icon: [
       {
@@ -39,6 +97,9 @@ export const metadata: Metadata = {
     ],
     apple: "/apple-icon.png",
   },
+  alternates: {
+    canonical: baseUrl,
+  },
 }
 
 export default function RootLayout({
@@ -48,6 +109,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
+      <head>
+        <StructuredData type="Organization" />
+        <StructuredData type="LocalBusiness" />
+      </head>
       <body className={`${playfair.variable} ${inter.variable} font-sans antialiased`}>
         {children}
         <CookieConsent />
