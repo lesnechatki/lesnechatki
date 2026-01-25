@@ -82,8 +82,8 @@
 }
 
 @theme inline {
-  /* Typography system - Playfair Display + Inter */
-  --font-heading: "Playfair Display", ui-serif, Georgia, serif;
+  /* Typography system - Poppins + Inter */
+  --font-heading: "Poppins", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "Geist Mono", "Geist Mono Fallback";
 

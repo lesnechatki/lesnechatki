@@ -1,17 +1,16 @@
-import { Check } from "lucide-react"
-
 const attractions = [
-  { name: "Szlaki piesze i rowerowe", distance: "start praktycznie spod domku" },
-  { name: "Stoki narciarskie Złoty Groń i Zagroń", distance: "4 km" },
-  { name: "Park Wodny Olza", distance: "4 km" },
-  { name: "Centrum Koronki Koniakowskiej", distance: "1 km" },
-  { name: "Karczma regionalna i bacówka", distance: "1 km" },
-  { name: "Ochodzita", distance: "3 km", note: "najpiękniejsze zachody słońca" },
-  { name: "Złoty Groń", distance: "3,5 km", note: "kolej linowa, punkt widokowy" },
-  { name: "Base Camp", distance: "5,5 km", note: "park linowy, paintball" },
-  { name: "Trasy Narciarstwa Biegowego", distance: "10 km" },
-  { name: "Trójstyk granic PL–CZ–SK", distance: "10 km" },
-  { name: "Barania Góra", distance: "13 km" },
+  { name: "Szlaki piesze i rowerowe", description: "start praktycznie spod domku", isBold: false },
+  { name: "Stoki narciarskie Złoty Groń i Zagroń", description: "trasy o różnym stopniu trudności", isBold: false },
+  { name: "Park Wodny Olza", description: "baseny zewnętrzne i wewnętrzne", isBold: false },
+  { name: "Centrum Koronki Koniakowskiej", description: "Muzeum i sklep", isBold: false },
+  { name: "Karczma Świstak", description: "kuchnia regionalna", isBold: false },
+  { name: "Centrum Pasterskie 1 km", description: "tradycja pasterska, bacówka i sklep", isBold: false },
+  { name: "Ochodzita", description: "najpiękniejsze zachody słońca", isBold: false },
+  { name: "Złoty Groń", description: "kolej linowa, punkt widokowy, trasy enduro", isBold: false },
+  { name: "Base Camp", description: "park linowy, paintball", isBold: false },
+  { name: "Trasy narciarstwa biegowego i biathlonu Kubalonka", description: "malownicze pętle leśne", isBold: true },
+  { name: "Trójstyk granic PL-CZ-SK", description: "punkt styku granic trzech państw", isBold: false },
+  { name: "Barania Góra", description: "źródła Wisły, widoki", isBold: false },
 ]
 
 export function AreaAttractions() {
@@ -31,19 +30,13 @@ export function AreaAttractions() {
           <div className="grid sm:grid-cols-2 gap-4">
             {attractions.map((attraction, index) => (
               <div key={index} className="p-4 bg-background rounded-2xl">
-                <div className="flex items-center gap-3">
-                  <div className="w-6 h-6 rounded-full bg-forest/10 flex items-center justify-center flex-shrink-0">
-                    <Check className="w-4 h-4 text-forest" strokeWidth={2.5} />
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <span className="text-foreground/80 font-medium block">{attraction.name}</span>
-                    {attraction.note && (
-                      <span className="text-xs text-muted-foreground block mt-1">{attraction.note}</span>
-                    )}
-                  </div>
-                  {attraction.distance && (
-                    <span className="text-sm text-muted-foreground ml-auto whitespace-nowrap">{attraction.distance}</span>
-                  )}
+                <div className="flex flex-col">
+                  <h3 className={`text-lg md:text-xl mb-1 ${attraction.isBold ? "font-bold" : "font-semibold"} text-forest`}>
+                    {attraction.name}
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {attraction.description}
+                  </p>
                 </div>
               </div>
             ))}

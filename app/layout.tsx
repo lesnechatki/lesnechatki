@@ -1,14 +1,14 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Playfair_Display, Inter } from "next/font/google"
+import { Poppins, Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { CookieConsent } from "@/components/cookie-consent"
 import { StructuredData } from "@/components/structured-data"
 import "./globals.css"
 
-const playfair = Playfair_Display({
+const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["400", "600", "700"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-heading",
   display: "swap",
   preload: true,
@@ -110,7 +110,7 @@ export default function RootLayout({
         <StructuredData type="Organization" />
         <StructuredData type="LocalBusiness" />
       </head>
-      <body className={`${playfair.variable} ${inter.variable} font-sans antialiased`}>
+      <body className={`${poppins.variable} ${inter.variable} font-sans antialiased`}>
         {children}
         <CookieConsent />
         <Analytics />

@@ -2,7 +2,7 @@
 
 ## 📋 ANALIZA WYMAGAŃ
 
-### ✅ CO ZOSTAŁO ZROBIONE:
+### ✅ CO ZOSTAŁO WYKONANE:
 
 #### 1. **NAWIGACJA I MENU** ✅
 - ✅ ~~Zmiana "Nasze Chatki" → "Chatki" w menu~~
@@ -12,6 +12,27 @@
 - ✅ ~~Usunięcie buttona/badge "Najwyżej położona wieś Beskidu Śląskiego" z sekcji Hero~~
 - ✅ ~~Aktualizacja tekstu głównego - skrócenie do: "Wiemy, że najlepsze wspomnienia tworzą się wtedy, gdy zwalniamy i doświadczamy miejsca wszystkimi zmysłami. Dlatego nasze domki stoją na dużej, zielonej działce z prywatnym lasem. Miejsce stworzone do spacerów między drzewami i poranków bez planu."~~
 - ⏳ Wymiana zdjęcia głównego (`/zdjecie-glowne.webp`) - źle wygląda na telefonie (potrzebne nowe zdjęcie) - **OCZEKIWANIE NA ZDJĘCIE**
+
+#### 3. **STRONA GŁÓWNA - USUNIĘCIE SEKCJI** ✅
+- ✅ ~~Usunięcie sekcji `Pricing` (Cennik) ze strony głównej~~
+- ✅ ~~Usunięcie sekcji `BookingConditions` (Warunki rezerwacji) ze strony głównej~~
+- ✅ ~~Usunięcie sekcji `AdditionalAttractions` (Atrakcje dodatkowe) ze strony głównej~~
+- ✅ ~~Usunięcie sekcji `AreaAttractions` (Okolica z opisem) ze strony głównej~~
+- ✅ ~~Usunięcie sekcji `PaymentInfo` (Dane do wpłat) ze strony głównej~~
+- ✅ ~~Dodanie wszystkich tych sekcji na strony poszczególnych domków~~
+
+#### 4. **CABINS OVERVIEW (Przegląd Chatki)**
+- ⬜ Zmiana zdjęć - tylko zewnętrzne zdjęcia chatki na stronie głównej (potrzebne potwierdzenie które zdjęcia)
+- ⬜ Problem z ikonami - "tylko 3 domki" (sprawdzić co to oznacza - może chodzi o Features?)
+
+#### 5. **WARUNKI REZERWACJI (BookingConditions)** ✅
+- ✅ ~~Usunięcie ikony "Imprezy specjalne" (PartyPopper)~~
+- ✅ ~~Dodanie zamiast tego: "Opłata za psa 50 zł za cały pobyt" (z ikoną PawPrint)~~
+- ✅ ~~Dodanie wyświetlania "Doba hotelowa 15:00-11:00" na stronach szczegółów chatki (zmiana formatu w cabins-data.ts)~~
+
+#### 6. **CENNIK (Pricing)** ✅
+- ✅ ~~Zmiana tła tekstu o dłuższych pobytach na zielone (obecnie `bg-sand`, zmienić na `bg-forest` z białym tekstem)~~
+- ✅ ~~Zmiana również w CabinPricing komponencie~~
 
 #### 7. **ATRAKCJE DODATKOWE (AdditionalAttractions)** ✅
 - ✅ ~~Poprawka: "kulligiem" → "kuligiem" (jedno 'l')~~
@@ -23,25 +44,6 @@
 ---
 
 ### 📝 CO POZOSTAŁO DO ZROBIENIA:
-
-#### 3. **STRONA GŁÓWNA - USUNIĘCIE SEKCJI**
-- ⬜ Usunięcie sekcji `Pricing` (Cennik) ze strony głównej
-- ⬜ Usunięcie sekcji `BookingConditions` (Warunki rezerwacji) ze strony głównej
-- ⬜ Usunięcie sekcji `AdditionalAttractions` (Atrakcje dodatkowe) ze strony głównej
-- ⬜ Usunięcie sekcji `AreaAttractions` (Okolica z opisem) ze strony głównej
-- ⬜ Usunięcie sekcji `PaymentInfo` (Dane do wpłat) ze strony głównej
-
-#### 4. **CABINS OVERVIEW (Przegląd Chatki)**
-- ⬜ Zmiana zdjęć - tylko zewnętrzne zdjęcia chatki na stronie głównej (potrzebne potwierdzenie które zdjęcia)
-- ⬜ Problem z ikonami - "tylko 3 domki" (sprawdzić co to oznacza - może chodzi o Features?)
-
-#### 5. **WARUNKI REZERWACJI (BookingConditions)**
-- ⬜ Usunięcie ikony "Imprezy specjalne" (PartyPopper)
-- ⬜ Dodanie zamiast tego: "Opłata za psa 50 zł za cały pobyt"
-- ⬜ Dodanie wyświetlania "Doba hotelowa 15:00-11:00" w ikonach po wyborze chatki (na stronie szczegółów chatki)
-
-#### 6. **CENNIK (Pricing)**
-- ⬜ Zmiana tła tekstu o dłuższych pobytach na zielone (obecnie `bg-sand`, zmienić na `bg-forest` z białym tekstem)
 
 #### 8. **OKOLICA - ATRAKCJE (AreaAttractions)**
 - ⬜ Zmiana formatu wyświetlania - duża nazwa, pod nią mniejszy opis
@@ -94,37 +96,38 @@
 6. ✅ Aktualizacja tekstu głównego w Hero (skrócenie)
 7. ⏳ Wymiana zdjęcia głównego (oczekiwanie na nowe zdjęcie)
 
-### **ETAP 3: Strona główna - usunięcie sekcji** - DO ZROBIENIA
-8. Usunięcie sekcji Pricing ze strony głównej
-9. Usunięcie sekcji BookingConditions ze strony głównej
-10. Usunięcie sekcji AdditionalAttractions ze strony głównej
-11. Usunięcie sekcji AreaAttractions ze strony głównej
-12. Usunięcie sekcji PaymentInfo ze strony głównej
+### ✅ **ETAP 3: Strona główna - usunięcie sekcji** - WYKONANE
+8. ✅ Usunięcie sekcji Pricing ze strony głównej
+9. ✅ Usunięcie sekcji BookingConditions ze strony głównej
+10. ✅ Usunięcie sekcji AdditionalAttractions ze strony głównej
+11. ✅ Usunięcie sekcji AreaAttractions ze strony głównej
+12. ✅ Usunięcie sekcji PaymentInfo ze strony głównej
+13. ✅ Dodanie wszystkich sekcji na strony poszczególnych domków
 
-### **ETAP 4: Warunki rezerwacji i cennik** - DO ZROBIENIA
-13. Usunięcie ikony "Imprezy specjalne" z BookingConditions
-14. Dodanie "Opłata za psa 50 zł za cały pobyt" w BookingConditions
-15. Zmiana tła tekstu o dłuższych pobytach na zielone w Pricing
-16. Dodanie wyświetlania "Doba hotelowa 15:00-11:00" na stronach szczegółów chatki
+### ✅ **ETAP 4: Warunki rezerwacji i cennik** - WYKONANE
+14. ✅ Usunięcie ikony "Imprezy specjalne" z BookingConditions
+15. ✅ Dodanie "Opłata za psa 50 zł za cały pobyt" w BookingConditions (z ikoną PawPrint)
+16. ✅ Zmiana tła tekstu o dłuższych pobytach na zielone w Pricing i CabinPricing
+17. ✅ Dodanie wyświetlania "Doba hotelowa 15:00-11:00" na stronach szczegółów chatki (zmiana formatu w cabins-data.ts)
 
 ### **ETAP 5: Cabins Overview - zdjęcia** - DO ZROBIENIA (wymaga potwierdzenia)
-17. Zmiana zdjęć chatki na stronie głównej - tylko zewnętrzne (po potwierdzeniu które)
-18. Sprawdzenie i poprawka problemu z ikonami (3 domki vs 4)
+18. Zmiana zdjęć chatki na stronie głównej - tylko zewnętrzne (po potwierdzeniu które)
+19. Sprawdzenie i poprawka problemu z ikonami (3 domki vs 4)
 
 ### **ETAP 6: Atrakcje okolicy - nowy format** - DO ZROBIENIA
-19. Zmiana formatu wyświetlania atrakcji - duża nazwa, pod nią mniejszy opis
-20. Aktualizacja listy atrakcji zgodnie z nowym formatem
+20. Zmiana formatu wyświetlania atrakcji - duża nazwa, pod nią mniejszy opis
+21. Aktualizacja listy atrakcji zgodnie z nowym formatem
 
 ### **ETAP 7: Galerie** - DO ZROBIENIA (wymaga potwierdzenia)
-21. Aktualizacja galerii okolicy - sortowanie (widoki → artystyczne)
-22. Aktualizacja galerii poszczególnych chatki (nowe zdjęcia)
+22. Aktualizacja galerii okolicy - sortowanie (widoki → artystyczne)
+23. Aktualizacja galerii poszczególnych chatki (nowe zdjęcia)
 
 ### **ETAP 8: Czcionka tytułów** - DO ZROBIENIA
-23. Zmiana czcionki tytułów na Poppins (lub podobną minimalistyczną)
-24. Aktualizacja CSS i zmiennych czcionek
+24. Zmiana czcionki tytułów na Poppins (lub podobną minimalistyczną)
+25. Aktualizacja CSS i zmiennych czcionek
 
 ### **ETAP 9: Zdjęcie Koniakowa** - DO ZROBIENIA
-25. Upewnienie się, że zdjęcie `koniak-w-beskid-mountains-village-landscape.jpg` jest używane w AboutLocation
+26. Upewnienie się, że zdjęcie `koniak-w-beskid-mountains-village-landscape.jpg` jest używane w AboutLocation
 
 ---
 
@@ -146,10 +149,45 @@
 
 ## 📊 POSTĘP
 
-- ✅ **Wykonane:** ETAP 1, ETAP 2 (bez wymiany zdjęcia)
+- ✅ **Wykonane:** ETAP 1, ETAP 2 (bez wymiany zdjęcia), ETAP 3, ETAP 4
 - ⏳ **Oczekiwanie:** Nowe zdjęcie główne
-- ⬜ **Do zrobienia:** ETAP 3, 4, 5, 6, 7, 8, 9
+- ⬜ **Do zrobienia:** ETAP 5, 6, 7, 8, 9
 - ❓ **Wymaga potwierdzenia:** ETAP 5 (zdjęcia zewnętrzne), ETAP 7 (sortowanie galerii)
+
+---
+
+## 📝 PODSUMOWANIE WYKONANYCH ZMIAN:
+
+### ✅ Wykonane zadania:
+
+1. **Nawigacja i menu:**
+   - Zmiana "Nasze Chatki" → "Chatki"
+   - Poprawka linku "Okolica" → `/okolica`
+
+2. **Hero:**
+   - Usunięcie buttona "Najwyżej położona wieś..."
+   - Skrócenie tekstu głównego
+
+3. **Strona główna:**
+   - Usunięcie 5 sekcji (Pricing, BookingConditions, AdditionalAttractions, AreaAttractions, PaymentInfo)
+   - Dodanie tych sekcji na strony poszczególnych domków
+
+4. **Warunki rezerwacji:**
+   - Usunięcie "Imprezy specjalne"
+   - Dodanie "Opłata za psa 50 zł za cały pobyt"
+
+5. **Cennik:**
+   - Zmiana tła tekstu o dłuższych pobytach na zielone (w Pricing i CabinPricing)
+
+6. **Doba hotelowa:**
+   - Zmiana formatu z "15-11" na "15:00-11:00" w cabins-data.ts
+
+7. **Teksty:**
+   - "kulligiem" → "kuligiem"
+   - "Autentyczna" → "Tradycyjna"
+
+8. **Kontakt:**
+   - Zmiana numeru telefonu z +47 na +48 (wszędzie)
 
 ---
 
@@ -157,15 +195,11 @@
 
 - Wszystkie zmiany będą wprowadzane etapami
 - Po każdym etapie będzie możliwość sprawdzenia i akceptacji
-- Pliki do modyfikacji:
-  - `components/booking-conditions.tsx`
-  - `components/pricing.tsx`
+- Pliki do modyfikacji (pozostałe):
   - `components/area-attractions.tsx`
   - `components/cabins-overview.tsx`
   - `components/okolica-gallery.tsx`
   - `components/cabin-gallery.tsx`
-  - `app/page.tsx`
   - `app/globals.css`
   - `app/layout.tsx`
-  - `components/cabin-details.tsx`
   - `components/about-location.tsx`
