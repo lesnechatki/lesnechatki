@@ -71,16 +71,16 @@
 
 ### 📝 CO POZOSTAŁO DO ZROBIENIA:
 
-#### 9. **GALERIA OKOLICY**
-- ⬜ Aktualizacja galerii okolicy (dodane nowe zdjęcia)
-- ⬜ Zmiana kolejności - najpierw widoki, potem zdjęcia artystyczne (potrzebne potwierdzenie które są które)
+#### 9. **GALERIA OKOLICY** ✅
+- ✅ ~~Aktualizacja galerii okolicy (sortowanie)~~
+- ✅ ~~Zmiana kolejności - najpierw: IMG_2698, IMG_2700, IMG_3529, IMG_3531, IMG_3554, IMG_3563, IMG_3569, IMG_6046, potem reszta~~
+- ⬜ Aktualizacja galerii poszczególnych chatki (jeśli są nowe zdjęcia)
 
 ---
 
 ## 📦 CO POTRZEBUJĘ DO DOSTARCZENIA:
 
 1. **Nowe zdjęcie główne** (`zdjecie-glowne.webp`) - format zoptymalizowany pod mobile
-2. **Potwierdzenie** - które zdjęcia z galerii okolicy są "widokami", a które "artystyczne" (do sortowania)
 
 ---
 
@@ -126,9 +126,9 @@
 24. ✅ Zmiana formatu wyświetlania atrakcji - duża nazwa, pod nią mniejszy opis
 25. ✅ Aktualizacja listy atrakcji zgodnie z nowym formatem (12 atrakcji)
 
-### **ETAP 7: Galerie** - DO ZROBIENIA (wymaga potwierdzenia)
-26. Aktualizacja galerii okolicy - sortowanie (widoki → artystyczne)
-27. Aktualizacja galerii poszczególnych chatki (nowe zdjęcia)
+### ✅ **ETAP 7: Galerie** - WYKONANE (galeria okolicy)
+26. ✅ Aktualizacja galerii okolicy - sortowanie (najpierw 8 wskazanych zdjęć, potem reszta)
+27. ⬜ Aktualizacja galerii poszczególnych chatki (jeśli są nowe zdjęcia)
 
 ### ✅ **ETAP 8: Czcionka tytułów** - WYKONANE
 28. ✅ Zmiana czcionki tytułów na Poppins (lub podobną minimalistyczną)
@@ -142,18 +142,17 @@
 
 ## ⚠️ UWAGI I ZAGADNIENIA DO WYJAŚNIENIA:
 
-1. **Sortowanie galerii okolicy** - które zdjęcia są "widokami", a które "artystyczne"?
+1. ~~**Sortowanie galerii okolicy**~~ – wykonane według podanej kolejności (8 zdjęć na początku, reszta na końcu)
 
 ---
 
 ## 📊 POSTĘP
 
-- ✅ **Wykonane:** ETAP 1, ETAP 2 (bez wymiany zdjęcia), ETAP 3, ETAP 4, ETAP 5, ETAP 6, ETAP 8, ETAP 9
+- ✅ **Wykonane:** ETAP 1, ETAP 2 (bez wymiany zdjęcia), ETAP 3, ETAP 4, ETAP 5, ETAP 6, ETAP 7 (galeria okolicy), ETAP 8, ETAP 9
 - ⏳ **Oczekiwanie:** Nowe zdjęcie główne
-- ⬜ **Do zrobienia:** ETAP 7 (Galerie)
-- ❓ **Wymaga potwierdzenia:** ETAP 7 (sortowanie galerii okolicy)
+- ⬜ **Do zrobienia:** ETAP 7 – galerie chatki (tylko przy nowych zdjęciach)
 
-**Postęp: 8 z 9 etapów wykonanych (89%)**
+**Postęp: 9 z 9 etapów wykonanych (100%)** – pozostało tylko zdjęcie główne i ewent. galerie chatki
 
 ---
 
@@ -222,19 +221,21 @@
 15. **Formatowanie zdjęć:**
     - Zdjęcia domków i okolicy wypełniają kontener bez pasów po bokach
 
+16. **Galeria okolicy:**
+    - Sortowanie zdjęć – najpierw 8 wskazanych (IMG_2698, 2700, 3529, 3531, 3554, 3563, 3569, 6046), potem reszta
+
 ---
 
 ## 📝 POZOSTAŁE ZADANIA:
 
-### ETAP 7: Galerie ⬜
-- Sortowanie galerii okolicy (widoki → artystyczne) (wymaga potwierdzenia)
-- Aktualizacja galerii poszczególnych chatki (jeśli są nowe zdjęcia)
+### ETAP 7: Galerie
+- ✅ Sortowanie galerii okolicy – wykonane
+- ⬜ Aktualizacja galerii poszczególnych chatki (jeśli są nowe zdjęcia)
 
 ---
 
 ## 📝 NOTATKI TECHNICZNE:
 
 - Wszystkie zmiany zostały wprowadzone etapami
-- Pliki do modyfikacji (pozostałe):
-  - `components/okolica-gallery.tsx`
-  - `components/cabin-gallery.tsx` (jeśli są nowe zdjęcia)
+- Galeria okolicy: kolejność zdjęć w `components/okolica-gallery.tsx`
+- Pliki do modyfikacji (pozostałe): `components/cabin-gallery.tsx` (jeśli są nowe zdjęcia chatki)
