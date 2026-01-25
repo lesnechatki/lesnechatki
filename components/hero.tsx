@@ -21,7 +21,7 @@ export function Hero() {
     <section
       id="home"
       ref={containerRef}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-forest/5 to-background"
+      className="relative min-h-screen md:min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-forest/5 to-background"
     >
       <motion.div style={{ y, scale }} className="absolute inset-0 z-0">
         <Image
@@ -31,37 +31,40 @@ export function Hero() {
           priority
           quality={90}
           className="object-cover"
+          style={{
+            objectPosition: "center 40%",
+          }}
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/15 to-background/90" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-background/80 md:from-black/40 md:via-black/15 md:to-background/90" />
       </motion.div>
 
-      <motion.div style={{ opacity }} className="relative z-10 container mx-auto px-4 py-32 text-center">
+      <motion.div style={{ opacity }} className="relative z-10 container mx-auto px-4 py-16 md:py-32 text-center">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
         >
           <motion.h1
-            className="text-6xl md:text-8xl lg:text-9xl font-bold text-white mb-8 text-balance tracking-tight leading-tight"
+            className="text-4xl sm:text-5xl md:text-8xl lg:text-9xl font-bold text-white mb-4 md:mb-8 text-balance tracking-tight leading-tight"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           >
             Leśne Chatki
             <br />
-            <span className="text-5xl md:text-7xl lg:text-8xl font-light bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-white/80">
+            <span className="text-3xl sm:text-4xl md:text-7xl lg:text-8xl font-light bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-white/80">
               w Koniakowie
             </span>
           </motion.h1>
         </motion.div>
 
-        <p className="text-xl md:text-2xl lg:text-3xl text-white/95 max-w-4xl mx-auto mb-14 leading-relaxed text-pretty font-light">
+        <p className="text-base sm:text-lg md:text-2xl lg:text-3xl text-white/95 max-w-4xl mx-auto mb-8 md:mb-14 leading-relaxed text-pretty font-light px-2">
           Wiemy, że najlepsze wspomnienia tworzą się wtedy, gdy zwalniamy i doświadczamy miejsca wszystkimi zmysłami. Dlatego nasze domki stoją na dużej, zielonej działce z prywatnym lasem. Miejsce stworzone do spacerów między drzewami i poranków bez planu.
         </p>
 
         <motion.div
-          className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+          className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center px-2"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 0.9, ease: [0.16, 1, 0.3, 1] }}
@@ -70,7 +73,7 @@ export function Hero() {
             <Button
               size="lg"
               onClick={() => document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" })}
-              className="bg-forest hover:bg-forest-light text-white rounded-full px-12 py-8 text-lg group shadow-2xl hover:shadow-forest/30 transition-all duration-500"
+              className="bg-forest hover:bg-forest-light text-white rounded-full px-8 sm:px-12 py-6 sm:py-8 text-base sm:text-lg group shadow-2xl hover:shadow-forest/30 transition-all duration-500 w-full sm:w-auto"
             >
               Zarezerwuj termin
               <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-2 transition-transform duration-300" />
@@ -81,7 +84,7 @@ export function Hero() {
               size="lg"
               variant="outline"
               onClick={() => document.getElementById("kontakt")?.scrollIntoView({ behavior: "smooth" })}
-              className="rounded-full px-12 py-8 text-lg glass-effect border-2 border-white/50 text-white hover:bg-white hover:text-forest shadow-2xl transition-all duration-500 bg-transparent"
+              className="rounded-full px-8 sm:px-12 py-6 sm:py-8 text-base sm:text-lg glass-effect border-2 border-white/50 text-white hover:bg-white hover:text-forest shadow-2xl transition-all duration-500 bg-transparent w-full sm:w-auto"
             >
               Skontaktuj się
             </Button>

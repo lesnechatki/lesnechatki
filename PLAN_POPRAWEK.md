@@ -20,6 +20,7 @@
 - ✅ ~~Usunięcie sekcji `AreaAttractions` (Okolica z opisem) ze strony głównej~~
 - ✅ ~~Usunięcie sekcji `PaymentInfo` (Dane do wpłat) ze strony głównej~~
 - ✅ ~~Dodanie wszystkich tych sekcji na strony poszczególnych domków~~
+- ✅ ~~Usunięcie sekcji `AreaAttractions` ze stron domków~~
 
 #### 4. **CABINS OVERVIEW (Przegląd Chatki)** ✅
 - ✅ ~~Zmiana zdjęć - tylko zewnętrzne zdjęcia chatki na stronie głównej~~
@@ -30,11 +31,13 @@
 - ✅ ~~Zmiana tekstu z "Cztery unikalne miejsca" na "Trzy unikalne miejsca"~~
 - ✅ ~~Zmiana gridu z `lg:grid-cols-4` na `lg:grid-cols-3`~~
 - ✅ ~~Poprawka problemu z ikonami - zmiana "Tylko 4 domki" na "Tylko 3 domki" w Features~~
+- ✅ ~~Poprawka formatowania zdjęć - `object-cover object-center` (wypełniają kontener bez pasów)~~
 
 #### 5. **WARUNKI REZERWACJI (BookingConditions)** ✅
 - ✅ ~~Usunięcie ikony "Imprezy specjalne" (PartyPopper)~~
 - ✅ ~~Dodanie zamiast tego: "Opłata za psa 50 zł za cały pobyt" (z ikoną PawPrint)~~
 - ✅ ~~Dodanie wyświetlania "Doba hotelowa 15:00-11:00" na stronach szczegółów chatki (zmiana formatu w cabins-data.ts)~~
+- ✅ ~~Ujednolicenie formatowania - spójne z CabinPricing (tło, border, hover effects)~~
 
 #### 6. **CENNIK (Pricing)** ✅
 - ✅ ~~Zmiana tła tekstu o dłuższych pobytach na zielone (obecnie `bg-sand`, zmienić na `bg-forest` z białym tekstem)~~
@@ -43,6 +46,7 @@
 #### 7. **ATRAKCJE DODATKOWE (AdditionalAttractions)** ✅
 - ✅ ~~Poprawka: "kulligiem" → "kuligiem" (jedno 'l')~~
 - ✅ ~~Zmiana: "Autentyczna muzyka góralska" → "Tradycyjna muzyka góralska"~~
+- ✅ ~~Ujednolicenie formatowania - spójne z CabinPricing (tło, border, hover effects)~~
 
 #### 8. **OKOLICA - ATRAKCJE (AreaAttractions)** ✅
 - ✅ ~~Zmiana formatu wyświetlania - duża nazwa, pod nią mniejszy opis~~
@@ -57,7 +61,11 @@
 - ✅ ~~Aktualizacja w app/globals.css (zmienna CSS)~~
 
 #### 12. **ZDJĘCIE KONIAKOWA** ✅
-- ✅ ~~Zmiana zdjęcia w AboutLocation na `/lesnechatki.okolica/IMG_2698.webp`~~
+- ✅ ~~Zmiana zdjęcia w AboutLocation na `/lesnechatki.okolica/IMG_2700.webp`~~
+- ✅ ~~Poprawka formatowania - `object-cover object-center` (wypełnia kontener bez pasów)~~
+
+#### 13. **DANE DO WPŁAT (PaymentInfo)** ✅
+- ✅ ~~Ujednolicenie formatowania - spójne z CabinPricing (tło, border, hover effects)~~
 
 ---
 
@@ -96,35 +104,39 @@
 11. ✅ Usunięcie sekcji AreaAttractions ze strony głównej
 12. ✅ Usunięcie sekcji PaymentInfo ze strony głównej
 13. ✅ Dodanie wszystkich sekcji na strony poszczególnych domków
+14. ✅ Usunięcie sekcji AreaAttractions ze stron domków
 
 ### ✅ **ETAP 4: Warunki rezerwacji i cennik** - WYKONANE
-14. ✅ Usunięcie ikony "Imprezy specjalne" z BookingConditions
-15. ✅ Dodanie "Opłata za psa 50 zł za cały pobyt" w BookingConditions (z ikoną PawPrint)
-16. ✅ Zmiana tła tekstu o dłuższych pobytach na zielone w Pricing i CabinPricing
-17. ✅ Dodanie wyświetlania "Doba hotelowa 15:00-11:00" na stronach szczegółów chatki (zmiana formatu w cabins-data.ts)
+15. ✅ Usunięcie ikony "Imprezy specjalne" z BookingConditions
+16. ✅ Dodanie "Opłata za psa 50 zł za cały pobyt" w BookingConditions (z ikoną PawPrint)
+17. ✅ Zmiana tła tekstu o dłuższych pobytach na zielone w Pricing i CabinPricing
+18. ✅ Dodanie wyświetlania "Doba hotelowa 15:00-11:00" na stronach szczegółów chatki (zmiana formatu w cabins-data.ts)
+19. ✅ Ujednolicenie formatowania sekcji (BookingConditions, AdditionalAttractions, PaymentInfo)
 
 ### ✅ **ETAP 5: Cabins Overview - zdjęcia** - WYKONANE
-18. ✅ Zmiana zdjęć chatki na stronie głównej - tylko zewnętrzne
+20. ✅ Zmiana zdjęć chatki na stronie głównej - tylko zewnętrzne
     - Jodła: IMG_2719.webp
     - Świerk: 3707B5EB-1276-4AA1-AE73-A0DD6676ADF9.webp
     - Sosna: pozostawione
-19. ✅ Ukrycie domku Modrzew (zakomentowane)
-20. ✅ Poprawka problemu z ikonami - "Tylko 3 domki" w Features
+21. ✅ Ukrycie domku Modrzew (zakomentowane)
+22. ✅ Poprawka problemu z ikonami - "Tylko 3 domki" w Features
+23. ✅ Poprawka formatowania zdjęć - wypełniają kontener bez pasów
 
 ### ✅ **ETAP 6: Atrakcje okolicy - nowy format** - WYKONANE
-21. ✅ Zmiana formatu wyświetlania atrakcji - duża nazwa, pod nią mniejszy opis
-22. ✅ Aktualizacja listy atrakcji zgodnie z nowym formatem (12 atrakcji)
+24. ✅ Zmiana formatu wyświetlania atrakcji - duża nazwa, pod nią mniejszy opis
+25. ✅ Aktualizacja listy atrakcji zgodnie z nowym formatem (12 atrakcji)
 
 ### **ETAP 7: Galerie** - DO ZROBIENIA (wymaga potwierdzenia)
-23. Aktualizacja galerii okolicy - sortowanie (widoki → artystyczne)
-24. Aktualizacja galerii poszczególnych chatki (nowe zdjęcia)
+26. Aktualizacja galerii okolicy - sortowanie (widoki → artystyczne)
+27. Aktualizacja galerii poszczególnych chatki (nowe zdjęcia)
 
 ### ✅ **ETAP 8: Czcionka tytułów** - WYKONANE
-25. ✅ Zmiana czcionki tytułów na Poppins (lub podobną minimalistyczną)
-26. ✅ Aktualizacja CSS i zmiennych czcionek
+28. ✅ Zmiana czcionki tytułów na Poppins (lub podobną minimalistyczną)
+29. ✅ Aktualizacja CSS i zmiennych czcionek
 
 ### ✅ **ETAP 9: Zdjęcie Koniakowa** - WYKONANE
-27. ✅ Zmiana zdjęcia w AboutLocation na `/lesnechatki.okolica/IMG_2698.webp`
+30. ✅ Zmiana zdjęcia w AboutLocation na IMG_2700.webp
+31. ✅ Poprawka formatowania - wypełnia kontener bez pasów
 
 ---
 
@@ -160,12 +172,14 @@
 3. **Strona główna:**
    - Usunięcie 5 sekcji (Pricing, BookingConditions, AdditionalAttractions, AreaAttractions, PaymentInfo)
    - Dodanie tych sekcji na strony poszczególnych domków
+   - Usunięcie sekcji AreaAttractions ze stron domków
 
 4. **Cabins Overview:**
    - Zmiana zdjęć na zewnętrzne (Jodła, Świerk)
    - Ukrycie Modrzew (zakomentowane)
    - Zmiana "Cztery unikalne miejsca" → "Trzy unikalne miejsca"
    - Poprawka gridu na 3 kolumny
+   - Poprawka formatowania zdjęć (wypełniają kontener)
 
 5. **Features:**
    - Zmiana "Tylko 4 domki" → "Tylko 3 domki"
@@ -173,6 +187,7 @@
 6. **Warunki rezerwacji:**
    - Usunięcie "Imprezy specjalne"
    - Dodanie "Opłata za psa 50 zł za cały pobyt"
+   - Ujednolicenie formatowania (spójne z CabinPricing)
 
 7. **Cennik:**
    - Zmiana tła tekstu o dłuższych pobytach na zielone (w Pricing i CabinPricing)
@@ -196,7 +211,16 @@
     - Aktualizacja w layout.tsx i globals.css
 
 13. **Zdjęcie Koniakowa:**
-    - Zmiana zdjęcia w AboutLocation na IMG_2698.webp
+    - Zmiana zdjęcia w AboutLocation na IMG_2700.webp
+    - Poprawka formatowania (wypełnia kontener)
+
+14. **Ujednolicenie formatowania sekcji:**
+    - BookingConditions, AdditionalAttractions, PaymentInfo - spójne style z CabinPricing
+    - Alternujące tła (background/sand) dla lepszego flow
+    - Spójne border, hover effects, backdrop-blur
+
+15. **Formatowanie zdjęć:**
+    - Zdjęcia domków i okolicy wypełniają kontener bez pasów po bokach
 
 ---
 

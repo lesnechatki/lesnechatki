@@ -5,19 +5,19 @@ import { useRef, useState } from "react"
 import { X } from "lucide-react"
 
 const okolicaImages = [
-  "/lesnechatki.okolica/IMG_0975.webp",
-  "/lesnechatki.okolica/IMG_0998.webp",
-  "/lesnechatki.okolica/IMG_1001.webp",
   "/lesnechatki.okolica/IMG_2698.webp",
   "/lesnechatki.okolica/IMG_2700.webp",
-  "/lesnechatki.okolica/IMG_2820.webp",
   "/lesnechatki.okolica/IMG_3529.webp",
   "/lesnechatki.okolica/IMG_3531.webp",
   "/lesnechatki.okolica/IMG_3554.webp",
   "/lesnechatki.okolica/IMG_3563.webp",
   "/lesnechatki.okolica/IMG_3569.webp",
-  "/lesnechatki.okolica/IMG_5161.webp",
   "/lesnechatki.okolica/IMG_6046.webp",
+  "/lesnechatki.okolica/IMG_0975.webp",
+  "/lesnechatki.okolica/IMG_0998.webp",
+  "/lesnechatki.okolica/IMG_1001.webp",
+  "/lesnechatki.okolica/IMG_2820.webp",
+  "/lesnechatki.okolica/IMG_5161.webp",
 ]
 
 export function OkolicaGallery() {
