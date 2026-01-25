@@ -79,8 +79,8 @@ export function Pricing() {
         </div>
 
         <div className="max-w-3xl mx-auto">
-          <Card className="p-8 bg-sand border-0 rounded-3xl">
-            <p className="text-center text-foreground/80 leading-relaxed">
+          <Card className="p-8 bg-forest border-0 rounded-3xl">
+            <p className="text-center text-white leading-relaxed">
               W przypadku dłuższych pobytów (powyżej 5 nocy), większych grup oraz Świąt ofertę wyceniamy indywidualnie.
             </p>
           </Card>

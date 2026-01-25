@@ -45,7 +45,7 @@ export const cabinsData: Record<string, CabinDetails> = {
       bathrooms: "2",
       tvs: "3",
       wifi: "TAK",
-      checkIn: "15-11",
+      checkIn: "15:00-11:00",
     },
     pricing: [
       { guests: "8 osób", price: "800,00 zł" },
@@ -72,7 +72,7 @@ export const cabinsData: Record<string, CabinDetails> = {
       bathrooms: "1",
       tvs: "2",
       wifi: "TAK",
-      checkIn: "15-11",
+      checkIn: "15:00-11:00",
     },
     pricing: [
       { guests: "4 osoby", price: "550,00 zł" },
@@ -102,7 +102,7 @@ export const cabinsData: Record<string, CabinDetails> = {
       bathrooms: "1",
       tvs: "2",
       wifi: "TAK",
-      checkIn: "15-11",
+      checkIn: "15:00-11:00",
     },
     pricing: [
       { guests: "6 osób", price: "600 zł" },

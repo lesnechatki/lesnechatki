@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card"
-import { Clock, CreditCard, Key, Shield, PartyPopper } from "lucide-react"
+import { Clock, CreditCard, Key, Shield, PawPrint } from "lucide-react"
 
 const conditions = [
   {
@@ -23,9 +23,9 @@ const conditions = [
     value: "500 zł",
   },
   {
-    icon: PartyPopper,
-    label: "Imprezy specjalne",
-    value: "1000 zł",
+    icon: PawPrint,
+    label: "Opłata za psa",
+    value: "50 zł za cały pobyt",
   },
 ]
 

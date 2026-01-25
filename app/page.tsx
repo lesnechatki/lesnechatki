@@ -50,12 +50,7 @@ export async function generateMetadata(): Promise<Metadata> {
 const Features = dynamic(() => import("@/components/features").then(mod => ({ default: mod.Features })), { ssr: true })
 const CabinsOverview = dynamic(() => import("@/components/cabins-overview").then(mod => ({ default: mod.CabinsOverview })), { ssr: true })
 const AboutLocation = dynamic(() => import("@/components/about-location").then(mod => ({ default: mod.AboutLocation })), { ssr: true })
-const Pricing = dynamic(() => import("@/components/pricing").then(mod => ({ default: mod.Pricing })), { ssr: true })
-const BookingConditions = dynamic(() => import("@/components/booking-conditions").then(mod => ({ default: mod.BookingConditions })), { ssr: true })
-const AdditionalAttractions = dynamic(() => import("@/components/additional-attractions").then(mod => ({ default: mod.AdditionalAttractions })), { ssr: true })
-const AreaAttractions = dynamic(() => import("@/components/area-attractions").then(mod => ({ default: mod.AreaAttractions })), { ssr: true })
 const Contact = dynamic(() => import("@/components/contact").then(mod => ({ default: mod.Contact })), { ssr: true })
-const PaymentInfo = dynamic(() => import("@/components/payment-info").then(mod => ({ default: mod.PaymentInfo })), { ssr: true })
 
 export default function Home() {
   return (
@@ -65,12 +60,7 @@ export default function Home() {
       <Features />
       <CabinsOverview />
       <AboutLocation />
-      <Pricing />
-      <BookingConditions />
-      <AdditionalAttractions />
-      <AreaAttractions />
       <Contact />
-      <PaymentInfo />
       <Footer />
     </main>
   )
