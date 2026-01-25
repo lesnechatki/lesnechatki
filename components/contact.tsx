@@ -45,8 +45,8 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="font-semibold text-forest mb-1">Telefon</p>
-                    <a href="tel:+47786888498" className="text-foreground/80 hover:text-forest transition-colors">
-                      +47 786 888 498
+                    <a href="tel:+48786888498" className="text-foreground/80 hover:text-forest transition-colors">
+                      +48 786 888 498
                     </a>
                   </div>
                 </div>

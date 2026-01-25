@@ -42,17 +42,6 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
         >
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1.5, delay: 0.3 }}
-            className="inline-block mb-8"
-          >
-            <div className="glass-effect px-6 py-3 rounded-full text-white/90 text-sm font-light backdrop-blur-xl border border-white/20">
-              Najwyżej położona wieś Beskidu Śląskiego
-            </div>
-          </motion.div>
-
           <motion.h1
             className="text-6xl md:text-8xl lg:text-9xl font-bold text-white mb-8 text-balance tracking-tight leading-tight"
             initial={{ opacity: 0, y: 40 }}
@@ -68,7 +57,7 @@ export function Hero() {
         </motion.div>
 
         <p className="text-xl md:text-2xl lg:text-3xl text-white/95 max-w-4xl mx-auto mb-14 leading-relaxed text-pretty font-light">
-          Wiemy, że najlepsze wspomnienia tworzą się wtedy, gdy zwalniamy i doświadczamy miejsca wszystkimi zmysłami. Dlatego nasze domki stoją na dużej, zielonej działce z prywatnym lasem. Miejsce stworzone do zwolnienia tempa, spacerów między drzewami i poranków bez planu.
+          Wiemy, że najlepsze wspomnienia tworzą się wtedy, gdy zwalniamy i doświadczamy miejsca wszystkimi zmysłami. Dlatego nasze domki stoją na dużej, zielonej działce z prywatnym lasem. Miejsce stworzone do spacerów między drzewami i poranków bez planu.
         </p>
 
         <motion.div

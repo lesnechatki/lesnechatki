@@ -41,7 +41,7 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Kontakt</h4>
             <ul className="space-y-2 text-white/80">
-              <li>+47 786 888 498</li>
+              <li>+48 786 888 498</li>
               <li>rezerwacje@lesnechatki.com</li>
               <li>Koniaków 1248/A</li>
             </ul>

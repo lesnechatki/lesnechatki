@@ -27,7 +27,7 @@ export default function PolitykaPrywatnosciPage() {
               <p className="mb-1">NIP: 5482735115</p>
               <p className="mb-1">Koniaków 1248/A</p>
               <p className="mb-1">43-474 Koniaków, Polska</p>
-              <p className="mb-1">Telefon: +47 786 888 498</p>
+              <p className="mb-1">Telefon: +48 786 888 498</p>
               <p>Email: rezerwacje@lesnechatki.com</p>
             </div>
           </section>
@@ -171,7 +171,7 @@ export default function PolitykaPrywatnosciPage() {
             </p>
             <div className="bg-section-bg p-6 rounded-lg mb-4">
               <p className="mb-1">Email: rezerwacje@lesnechatki.com</p>
-              <p className="mb-1">Telefon: +47 786 888 498</p>
+              <p className="mb-1">Telefon: +48 786 888 498</p>
               <p className="mb-1">Koniaków 1248/A</p>
               <p>43-474 Koniaków, Polska</p>
             </div>

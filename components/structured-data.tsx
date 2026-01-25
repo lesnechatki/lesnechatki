@@ -26,7 +26,7 @@ export function StructuredData({ type, cabin }: StructuredDataProps) {
       },
       contactPoint: {
         "@type": "ContactPoint",
-        telephone: "+47-786-888-498",
+        telephone: "+48-786-888-498",
         contactType: "Rezerwacje",
         email: "rezerwacje@lesnechatki.com",
       },

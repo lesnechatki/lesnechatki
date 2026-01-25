@@ -20,9 +20,9 @@ export function Navigation() {
 
   const menuItems = [
     { href: "/#home", label: "Start" },
-    { href: "/#chatki", label: "Nasze Chatki" },
+    { href: "/#chatki", label: "Chatki" },
     { href: "/#cennik", label: "Cennik" },
-    { href: "/#okolica", label: "Okolica" },
+    { href: "/okolica", label: "Okolica" },
     { href: "/#kontakt", label: "Kontakt" },
   ]
 

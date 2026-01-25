@@ -12,13 +12,13 @@ const attractions = [
     icon: Truck,
     name: "Kulig",
     price: "350 zł / wóz / max 10 osób",
-    description: "Tradycyjna przejażdżka kulligiem",
+    description: "Tradycyjna przejażdżka kuligiem",
   },
   {
     icon: Music,
     name: "Kapela góralska",
     price: "od 500 zł",
-    description: "Autentyczna muzyka góralska",
+    description: "Tradycyjna muzyka góralska",
   },
 ]
 
