@@ -21,10 +21,6 @@
 - ✅ ~~Usunięcie sekcji `PaymentInfo` (Dane do wpłat) ze strony głównej~~
 - ✅ ~~Dodanie wszystkich tych sekcji na strony poszczególnych domków~~
 
-#### 4. **CABINS OVERVIEW (Przegląd Chatki)**
-- ⬜ Zmiana zdjęć - tylko zewnętrzne zdjęcia chatki na stronie głównej (potrzebne potwierdzenie które zdjęcia)
-- ⬜ Problem z ikonami - "tylko 3 domki" (sprawdzić co to oznacza - może chodzi o Features?)
-
 #### 5. **WARUNKI REZERWACJI (BookingConditions)** ✅
 - ✅ ~~Usunięcie ikony "Imprezy specjalne" (PartyPopper)~~
 - ✅ ~~Dodanie zamiast tego: "Opłata za psa 50 zł za cały pobyt" (z ikoną PawPrint)~~
@@ -38,36 +34,29 @@
 - ✅ ~~Poprawka: "kulligiem" → "kuligiem" (jedno 'l')~~
 - ✅ ~~Zmiana: "Autentyczna muzyka góralska" → "Tradycyjna muzyka góralska"~~
 
+#### 8. **OKOLICA - ATRAKCJE (AreaAttractions)** ✅
+- ✅ ~~Zmiana formatu wyświetlania - duża nazwa, pod nią mniejszy opis~~
+- ✅ ~~Aktualizacja listy atrakcji zgodnie z nowym formatem (12 atrakcji)~~
+
 #### 10. **KONTAKT** ✅
 - ✅ ~~Zmiana numeru telefonu: "+47 786 888 498" → "+48 786 888 498" (wszędzie gdzie występuje)~~
+
+#### 11. **CZCIONKA TYTUŁÓW** ✅
+- ✅ ~~Zmiana czcionki tytułów z Playfair Display na Poppins~~
+- ✅ ~~Aktualizacja w app/layout.tsx (import i zmienna)~~
+- ✅ ~~Aktualizacja w app/globals.css (zmienna CSS)~~
 
 ---
 
 ### 📝 CO POZOSTAŁO DO ZROBIENIA:
 
-#### 8. **OKOLICA - ATRAKCJE (AreaAttractions)**
-- ⬜ Zmiana formatu wyświetlania - duża nazwa, pod nią mniejszy opis
-- ⬜ Aktualizacja listy atrakcji zgodnie z nowym formatem:
-  - Szlaki piesze i rowerowe (start praktycznie spod domku)
-  - Stoki narciarskie Złoty Groń i Zagroń (trasy o różnym stopniu trudności)
-  - Park Wodny Olza (baseny zewnętrzne i wewnętrzne)
-  - Centrum Koronki Koniakowskiej (Muzeum i sklep)
-  - Karczma Świstak (kuchnia regionalna)
-  - Centrum Pasterskie 1 km (tradycja pasterska, bacówka i sklep)
-  - Ochodzita (najpiękniejsze zachody słońca)
-  - Złoty Groń (kolej linowa, punkt widokowy, trasy enduro)
-  - Base Camp (park linowy, paintball)
-  - **Trasy narciarstwa biegowego i biathlonu Kubalonka** (malownicze pętle leśne)
-  - Trójstyk granic PL-CZ-SK (punkt styku granic trzech państw)
-  - Barania Góra (źródła Wisły, widoki)
+#### 4. **CABINS OVERVIEW (Przegląd Chatki)**
+- ⬜ Zmiana zdjęć - tylko zewnętrzne zdjęcia chatki na stronie głównej (potrzebne potwierdzenie które zdjęcia)
+- ⬜ Problem z ikonami - "tylko 3 domki" (sprawdzić co to oznacza - może chodzi o Features?)
 
 #### 9. **GALERIA OKOLICY**
 - ⬜ Aktualizacja galerii okolicy (dodane nowe zdjęcia)
 - ⬜ Zmiana kolejności - najpierw widoki, potem zdjęcia artystyczne (potrzebne potwierdzenie które są które)
-
-#### 11. **CZCIONKA TYTUŁÓW**
-- ⬜ Zmiana czcionki tytułów (obecnie zielone) na bardziej przypominającą Poppins, minimalistyczną
-- ⬜ Obecnie: `--font-heading: "Playfair Display"` → zmienić na Poppins lub podobną
 
 #### 12. **ZDJĘCIE KONIAKOWA**
 - ⬜ Upewnienie się, że zdjęcie `koniak-w-beskid-mountains-village-landscape.jpg` jest używane w AboutLocation
@@ -79,7 +68,6 @@
 1. **Nowe zdjęcie główne** (`zdjecie-glowne.webp`) - format zoptymalizowany pod mobile
 2. **Potwierdzenie** - które zdjęcia z galerii okolicy są "widokami", a które "artystyczne" (do sortowania)
 3. **Potwierdzenie** - które zdjęcia z galerii chatki są zewnętrzne (do użycia na stronie głównej)
-4. **Czcionka** - potwierdzenie czy użyć Google Fonts "Poppins" czy inną minimalistyczną
 
 ---
 
@@ -114,17 +102,17 @@
 18. Zmiana zdjęć chatki na stronie głównej - tylko zewnętrzne (po potwierdzeniu które)
 19. Sprawdzenie i poprawka problemu z ikonami (3 domki vs 4)
 
-### **ETAP 6: Atrakcje okolicy - nowy format** - DO ZROBIENIA
-20. Zmiana formatu wyświetlania atrakcji - duża nazwa, pod nią mniejszy opis
-21. Aktualizacja listy atrakcji zgodnie z nowym formatem
+### ✅ **ETAP 6: Atrakcje okolicy - nowy format** - WYKONANE
+20. ✅ Zmiana formatu wyświetlania atrakcji - duża nazwa, pod nią mniejszy opis
+21. ✅ Aktualizacja listy atrakcji zgodnie z nowym formatem (12 atrakcji)
 
 ### **ETAP 7: Galerie** - DO ZROBIENIA (wymaga potwierdzenia)
 22. Aktualizacja galerii okolicy - sortowanie (widoki → artystyczne)
 23. Aktualizacja galerii poszczególnych chatki (nowe zdjęcia)
 
-### **ETAP 8: Czcionka tytułów** - DO ZROBIENIA
-24. Zmiana czcionki tytułów na Poppins (lub podobną minimalistyczną)
-25. Aktualizacja CSS i zmiennych czcionek
+### ✅ **ETAP 8: Czcionka tytułów** - WYKONANE
+24. ✅ Zmiana czcionki tytułów na Poppins (lub podobną minimalistyczną)
+25. ✅ Aktualizacja CSS i zmiennych czcionek
 
 ### **ETAP 9: Zdjęcie Koniakowa** - DO ZROBIENIA
 26. Upewnienie się, że zdjęcie `koniak-w-beskid-mountains-village-landscape.jpg` jest używane w AboutLocation
@@ -141,18 +129,16 @@
 
 3. **Sortowanie galerii okolicy** - które zdjęcia są "widokami", a które "artystyczne"?
 
-4. **Czcionka** - czy użyć Google Fonts "Poppins" czy inną minimalistyczną?
-
-5. **Format zdjęcia głównego** - jaki format będzie najlepszy dla mobile? (WebP, optymalne wymiary)
-
 ---
 
 ## 📊 POSTĘP
 
-- ✅ **Wykonane:** ETAP 1, ETAP 2 (bez wymiany zdjęcia), ETAP 3, ETAP 4
+- ✅ **Wykonane:** ETAP 1, ETAP 2 (bez wymiany zdjęcia), ETAP 3, ETAP 4, ETAP 6, ETAP 8
 - ⏳ **Oczekiwanie:** Nowe zdjęcie główne
-- ⬜ **Do zrobienia:** ETAP 5, 6, 7, 8, 9
+- ⬜ **Do zrobienia:** ETAP 5, ETAP 7, ETAP 9
 - ❓ **Wymaga potwierdzenia:** ETAP 5 (zdjęcia zewnętrzne), ETAP 7 (sortowanie galerii)
+
+**Postęp: 6 z 9 etapów wykonanych (67%)**
 
 ---
 
@@ -189,6 +175,29 @@
 8. **Kontakt:**
    - Zmiana numeru telefonu z +47 na +48 (wszędzie)
 
+9. **Atrakcje okolicy:**
+   - Nowy format wyświetlania (duża nazwa, pod nią opis)
+   - Zaktualizowana lista 12 atrakcji
+
+10. **Czcionka tytułów:**
+    - Zmiana z Playfair Display na Poppins
+    - Aktualizacja w layout.tsx i globals.css
+
+---
+
+## 📝 POZOSTAŁE ZADANIA:
+
+### ETAP 5: Cabins Overview - zdjęcia ⬜
+- Zmiana zdjęć chatki na stronie głównej - tylko zewnętrzne (wymaga potwierdzenia)
+- Sprawdzenie problemu z ikonami (3 domki vs 4)
+
+### ETAP 7: Galerie ⬜
+- Sortowanie galerii okolicy (widoki → artystyczne) (wymaga potwierdzenia)
+- Aktualizacja galerii poszczególnych chatki
+
+### ETAP 9: Zdjęcie Koniakowa ⬜
+- Sprawdzenie użycia właściwego zdjęcia w AboutLocation
+
 ---
 
 ## 📝 NOTATKI TECHNICZNE:
@@ -196,10 +205,7 @@
 - Wszystkie zmiany będą wprowadzane etapami
 - Po każdym etapie będzie możliwość sprawdzenia i akceptacji
 - Pliki do modyfikacji (pozostałe):
-  - `components/area-attractions.tsx`
   - `components/cabins-overview.tsx`
   - `components/okolica-gallery.tsx`
   - `components/cabin-gallery.tsx`
-  - `app/globals.css`
-  - `app/layout.tsx`
   - `components/about-location.tsx`

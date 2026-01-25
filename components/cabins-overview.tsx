@@ -11,13 +11,13 @@ const cabins = [
   {
     name: "Jodła",
     description: "Dla 8 osób",
-    image: "/lesnechatki.jodla/IMG_3620.webp",
+    image: "/lesnechatki.jodla/IMG_2719.webp",
     href: "/jodla",
   },
   {
     name: "Świerk",
     description: "Dla 4 osób",
-    image: "/lesnechatki.swierk/IMG_3853.webp",
+    image: "/lesnechatki.swierk/3707B5EB-1276-4AA1-AE73-A0DD6676ADF9.webp",
     href: "/swierk",
   },
   {
@@ -26,13 +26,14 @@ const cabins = [
     image: "/lesnechatki.sosna/IMG_1835.webp",
     href: "/sosna",
   },
-  {
-    name: "Modrzew",
-    description: "Wkrótce",
-    image: "/lesnechatki.modrzew/IMG_1147.webp",
-    href: "/modrzew",
-    comingSoon: true,
-  },
+  // Modrzew - ukryty, odkomentować gdy będzie gotowy
+  // {
+  //   name: "Modrzew",
+  //   description: "Wkrótce",
+  //   image: "/lesnechatki.modrzew/IMG_1147.webp",
+  //   href: "/modrzew",
+  //   comingSoon: true,
+  // },
 ]
 
 export function CabinsOverview() {
@@ -68,7 +69,7 @@ export function CabinsOverview() {
             className="inline-block mb-6"
           >
             <div className="forest-glass px-6 py-2 rounded-full text-forest text-sm font-medium border border-forest/20">
-              Cztery unikalne miejsca
+              Trzy unikalne miejsca
             </div>
           </motion.div>
 
@@ -91,7 +92,7 @@ export function CabinsOverview() {
           </motion.p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {cabins.map((cabin, index) => (
             <motion.div
               key={cabin.name}

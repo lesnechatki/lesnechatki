@@ -9,7 +9,7 @@ const features = [
   { icon: Droplets, label: "Balia dla gości", description: "Relaks w ciepłej wodzie" },
   { icon: PawPrint, label: "Przyjazne psom", description: "Twój pupil mile widziany" },
   { icon: Flame, label: "Ognisko i grill", description: "Wieczory przy ogniu" },
-  { icon: Home, label: "Kameralny kompleks", description: "Tylko 4 domki" },
+  { icon: Home, label: "Kameralny kompleks", description: "Tylko 3 domki" },
 ]
 
 export function Features() {
