@@ -107,7 +107,7 @@ export function CabinsOverview() {
               <Link href={cabin.href}>
                 <motion.div whileHover={{ y: -12 }} transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}>
                   <Card className="overflow-hidden border border-border/30 hover:border-forest/30 transition-all duration-700 group cursor-pointer rounded-3xl shadow-lg hover:shadow-2xl hover:shadow-forest/10 bg-white/50 backdrop-blur-sm">
-                    <div className="relative h-80 overflow-hidden">
+                    <div className="relative h-80 overflow-hidden bg-sand/30">
                       <motion.div
                         className="relative w-full h-full"
                         whileHover={{ scale: 1.08 }}
@@ -118,7 +118,7 @@ export function CabinsOverview() {
                           alt={`${cabin.name} - Leśne Chatki w Koniakowie`}
                           fill
                           quality={85}
-                          className="object-cover"
+                          className="object-contain"
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                           loading="lazy"
                         />

@@ -21,6 +21,16 @@
 - ✅ ~~Usunięcie sekcji `PaymentInfo` (Dane do wpłat) ze strony głównej~~
 - ✅ ~~Dodanie wszystkich tych sekcji na strony poszczególnych domków~~
 
+#### 4. **CABINS OVERVIEW (Przegląd Chatki)** ✅
+- ✅ ~~Zmiana zdjęć - tylko zewnętrzne zdjęcia chatki na stronie głównej~~
+  - Jodła: `/lesnechatki.jodla/IMG_2719.webp`
+  - Świerk: `/lesnechatki.swierk/3707B5EB-1276-4AA1-AE73-A0DD6676ADF9.webp`
+  - Sosna: pozostawione bez zmian
+- ✅ ~~Ukrycie domku Modrzew (zakomentowane w kodzie, łatwo odkomentować)~~
+- ✅ ~~Zmiana tekstu z "Cztery unikalne miejsca" na "Trzy unikalne miejsca"~~
+- ✅ ~~Zmiana gridu z `lg:grid-cols-4` na `lg:grid-cols-3`~~
+- ✅ ~~Poprawka problemu z ikonami - zmiana "Tylko 4 domki" na "Tylko 3 domki" w Features~~
+
 #### 5. **WARUNKI REZERWACJI (BookingConditions)** ✅
 - ✅ ~~Usunięcie ikony "Imprezy specjalne" (PartyPopper)~~
 - ✅ ~~Dodanie zamiast tego: "Opłata za psa 50 zł za cały pobyt" (z ikoną PawPrint)~~
@@ -46,20 +56,16 @@
 - ✅ ~~Aktualizacja w app/layout.tsx (import i zmienna)~~
 - ✅ ~~Aktualizacja w app/globals.css (zmienna CSS)~~
 
+#### 12. **ZDJĘCIE KONIAKOWA** ✅
+- ✅ ~~Zmiana zdjęcia w AboutLocation na `/lesnechatki.okolica/IMG_2698.webp`~~
+
 ---
 
 ### 📝 CO POZOSTAŁO DO ZROBIENIA:
 
-#### 4. **CABINS OVERVIEW (Przegląd Chatki)**
-- ⬜ Zmiana zdjęć - tylko zewnętrzne zdjęcia chatki na stronie głównej (potrzebne potwierdzenie które zdjęcia)
-- ⬜ Problem z ikonami - "tylko 3 domki" (sprawdzić co to oznacza - może chodzi o Features?)
-
 #### 9. **GALERIA OKOLICY**
 - ⬜ Aktualizacja galerii okolicy (dodane nowe zdjęcia)
 - ⬜ Zmiana kolejności - najpierw widoki, potem zdjęcia artystyczne (potrzebne potwierdzenie które są które)
-
-#### 12. **ZDJĘCIE KONIAKOWA**
-- ⬜ Upewnienie się, że zdjęcie `koniak-w-beskid-mountains-village-landscape.jpg` jest używane w AboutLocation
 
 ---
 
@@ -67,7 +73,6 @@
 
 1. **Nowe zdjęcie główne** (`zdjecie-glowne.webp`) - format zoptymalizowany pod mobile
 2. **Potwierdzenie** - które zdjęcia z galerii okolicy są "widokami", a które "artystyczne" (do sortowania)
-3. **Potwierdzenie** - które zdjęcia z galerii chatki są zewnętrzne (do użycia na stronie głównej)
 
 ---
 
@@ -98,47 +103,45 @@
 16. ✅ Zmiana tła tekstu o dłuższych pobytach na zielone w Pricing i CabinPricing
 17. ✅ Dodanie wyświetlania "Doba hotelowa 15:00-11:00" na stronach szczegółów chatki (zmiana formatu w cabins-data.ts)
 
-### **ETAP 5: Cabins Overview - zdjęcia** - DO ZROBIENIA (wymaga potwierdzenia)
-18. Zmiana zdjęć chatki na stronie głównej - tylko zewnętrzne (po potwierdzeniu które)
-19. Sprawdzenie i poprawka problemu z ikonami (3 domki vs 4)
+### ✅ **ETAP 5: Cabins Overview - zdjęcia** - WYKONANE
+18. ✅ Zmiana zdjęć chatki na stronie głównej - tylko zewnętrzne
+    - Jodła: IMG_2719.webp
+    - Świerk: 3707B5EB-1276-4AA1-AE73-A0DD6676ADF9.webp
+    - Sosna: pozostawione
+19. ✅ Ukrycie domku Modrzew (zakomentowane)
+20. ✅ Poprawka problemu z ikonami - "Tylko 3 domki" w Features
 
 ### ✅ **ETAP 6: Atrakcje okolicy - nowy format** - WYKONANE
-20. ✅ Zmiana formatu wyświetlania atrakcji - duża nazwa, pod nią mniejszy opis
-21. ✅ Aktualizacja listy atrakcji zgodnie z nowym formatem (12 atrakcji)
+21. ✅ Zmiana formatu wyświetlania atrakcji - duża nazwa, pod nią mniejszy opis
+22. ✅ Aktualizacja listy atrakcji zgodnie z nowym formatem (12 atrakcji)
 
 ### **ETAP 7: Galerie** - DO ZROBIENIA (wymaga potwierdzenia)
-22. Aktualizacja galerii okolicy - sortowanie (widoki → artystyczne)
-23. Aktualizacja galerii poszczególnych chatki (nowe zdjęcia)
+23. Aktualizacja galerii okolicy - sortowanie (widoki → artystyczne)
+24. Aktualizacja galerii poszczególnych chatki (nowe zdjęcia)
 
 ### ✅ **ETAP 8: Czcionka tytułów** - WYKONANE
-24. ✅ Zmiana czcionki tytułów na Poppins (lub podobną minimalistyczną)
-25. ✅ Aktualizacja CSS i zmiennych czcionek
+25. ✅ Zmiana czcionki tytułów na Poppins (lub podobną minimalistyczną)
+26. ✅ Aktualizacja CSS i zmiennych czcionek
 
-### **ETAP 9: Zdjęcie Koniakowa** - DO ZROBIENIA
-26. Upewnienie się, że zdjęcie `koniak-w-beskid-mountains-village-landscape.jpg` jest używane w AboutLocation
+### ✅ **ETAP 9: Zdjęcie Koniakowa** - WYKONANE
+27. ✅ Zmiana zdjęcia w AboutLocation na `/lesnechatki.okolica/IMG_2698.webp`
 
 ---
 
 ## ⚠️ UWAGI I ZAGADNIENIA DO WYJAŚNIENIA:
 
-1. **Ikony - "tylko 3 domki"** - nie jest jasne co to oznacza. Może chodzi o:
-   - Features (obecnie 5 ikon)?
-   - Coś innego?
-
-2. **Zdjęcia zewnętrzne chatki** - które konkretnie zdjęcia są zewnętrzne dla każdej chatki?
-
-3. **Sortowanie galerii okolicy** - które zdjęcia są "widokami", a które "artystyczne"?
+1. **Sortowanie galerii okolicy** - które zdjęcia są "widokami", a które "artystyczne"?
 
 ---
 
 ## 📊 POSTĘP
 
-- ✅ **Wykonane:** ETAP 1, ETAP 2 (bez wymiany zdjęcia), ETAP 3, ETAP 4, ETAP 6, ETAP 8
+- ✅ **Wykonane:** ETAP 1, ETAP 2 (bez wymiany zdjęcia), ETAP 3, ETAP 4, ETAP 5, ETAP 6, ETAP 8, ETAP 9
 - ⏳ **Oczekiwanie:** Nowe zdjęcie główne
-- ⬜ **Do zrobienia:** ETAP 5, ETAP 7, ETAP 9
-- ❓ **Wymaga potwierdzenia:** ETAP 5 (zdjęcia zewnętrzne), ETAP 7 (sortowanie galerii)
+- ⬜ **Do zrobienia:** ETAP 7 (Galerie)
+- ❓ **Wymaga potwierdzenia:** ETAP 7 (sortowanie galerii okolicy)
 
-**Postęp: 6 z 9 etapów wykonanych (67%)**
+**Postęp: 8 z 9 etapów wykonanych (89%)**
 
 ---
 
@@ -158,54 +161,56 @@
    - Usunięcie 5 sekcji (Pricing, BookingConditions, AdditionalAttractions, AreaAttractions, PaymentInfo)
    - Dodanie tych sekcji na strony poszczególnych domków
 
-4. **Warunki rezerwacji:**
+4. **Cabins Overview:**
+   - Zmiana zdjęć na zewnętrzne (Jodła, Świerk)
+   - Ukrycie Modrzew (zakomentowane)
+   - Zmiana "Cztery unikalne miejsca" → "Trzy unikalne miejsca"
+   - Poprawka gridu na 3 kolumny
+
+5. **Features:**
+   - Zmiana "Tylko 4 domki" → "Tylko 3 domki"
+
+6. **Warunki rezerwacji:**
    - Usunięcie "Imprezy specjalne"
    - Dodanie "Opłata za psa 50 zł za cały pobyt"
 
-5. **Cennik:**
+7. **Cennik:**
    - Zmiana tła tekstu o dłuższych pobytach na zielone (w Pricing i CabinPricing)
 
-6. **Doba hotelowa:**
+8. **Doba hotelowa:**
    - Zmiana formatu z "15-11" na "15:00-11:00" w cabins-data.ts
 
-7. **Teksty:**
+9. **Teksty:**
    - "kulligiem" → "kuligiem"
    - "Autentyczna" → "Tradycyjna"
 
-8. **Kontakt:**
-   - Zmiana numeru telefonu z +47 na +48 (wszędzie)
+10. **Kontakt:**
+    - Zmiana numeru telefonu z +47 na +48 (wszędzie)
 
-9. **Atrakcje okolicy:**
-   - Nowy format wyświetlania (duża nazwa, pod nią opis)
-   - Zaktualizowana lista 12 atrakcji
+11. **Atrakcje okolicy:**
+    - Nowy format wyświetlania (duża nazwa, pod nią opis)
+    - Zaktualizowana lista 12 atrakcji
 
-10. **Czcionka tytułów:**
+12. **Czcionka tytułów:**
     - Zmiana z Playfair Display na Poppins
     - Aktualizacja w layout.tsx i globals.css
+
+13. **Zdjęcie Koniakowa:**
+    - Zmiana zdjęcia w AboutLocation na IMG_2698.webp
 
 ---
 
 ## 📝 POZOSTAŁE ZADANIA:
 
-### ETAP 5: Cabins Overview - zdjęcia ⬜
-- Zmiana zdjęć chatki na stronie głównej - tylko zewnętrzne (wymaga potwierdzenia)
-- Sprawdzenie problemu z ikonami (3 domki vs 4)
-
 ### ETAP 7: Galerie ⬜
 - Sortowanie galerii okolicy (widoki → artystyczne) (wymaga potwierdzenia)
-- Aktualizacja galerii poszczególnych chatki
-
-### ETAP 9: Zdjęcie Koniakowa ⬜
-- Sprawdzenie użycia właściwego zdjęcia w AboutLocation
+- Aktualizacja galerii poszczególnych chatki (jeśli są nowe zdjęcia)
 
 ---
 
 ## 📝 NOTATKI TECHNICZNE:
 
-- Wszystkie zmiany będą wprowadzane etapami
-- Po każdym etapie będzie możliwość sprawdzenia i akceptacji
+- Wszystkie zmiany zostały wprowadzone etapami
 - Pliki do modyfikacji (pozostałe):
-  - `components/cabins-overview.tsx`
   - `components/okolica-gallery.tsx`
-  - `components/cabin-gallery.tsx`
-  - `components/about-location.tsx`
+  - `components/cabin-gallery.tsx` (jeśli są nowe zdjęcia)

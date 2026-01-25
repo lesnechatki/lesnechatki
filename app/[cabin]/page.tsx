@@ -11,7 +11,6 @@ import { CabinPricing } from "@/components/cabin-pricing"
 import { StructuredData } from "@/components/structured-data"
 import { BookingConditions } from "@/components/booking-conditions"
 import { AdditionalAttractions } from "@/components/additional-attractions"
-import { AreaAttractions } from "@/components/area-attractions"
 import { PaymentInfo } from "@/components/payment-info"
 
 export async function generateStaticParams() {
@@ -97,7 +96,6 @@ export default async function CabinPage({ params }: { params: Promise<{ cabin: s
       <CabinPricing cabin={cabin} />
       <BookingConditions />
       <AdditionalAttractions />
-      <AreaAttractions />
       <PaymentInfo />
       <Footer />
     </main>
