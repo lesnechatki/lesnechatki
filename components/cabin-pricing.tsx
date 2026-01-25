@@ -127,8 +127,8 @@ export function CabinPricing({ cabin }: CabinPricingProps) {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="max-w-3xl mx-auto"
           >
-            <Card className="p-8 bg-sand border-0 rounded-3xl">
-              <p className="text-center text-foreground/80 leading-relaxed mb-6">
+            <Card className="p-8 bg-forest border-0 rounded-3xl">
+              <p className="text-center text-white leading-relaxed mb-6">
                 W przypadku dłuższych pobytów (powyżej 5 nocy), większych grup oraz Świąt ofertę wyceniamy indywidualnie.
               </p>
               <div className="flex justify-center">
