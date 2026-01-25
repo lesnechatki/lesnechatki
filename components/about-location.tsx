@@ -30,15 +30,15 @@ export function AboutLocation() {
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.8 }}
-            className="relative h-[600px] rounded-3xl overflow-hidden shadow-2xl bg-sand/50"
+            className="relative h-[600px] rounded-3xl overflow-hidden shadow-2xl"
           >
             <motion.div style={{ y: imageY }} className="relative w-full h-full">
               <Image
-                src="/lesnechatki.okolica/IMG_2698.webp"
+                src="/lesnechatki.okolica/IMG_2700.webp"
                 alt="Koniaków - najwyżej położona wieś Beskidu Śląskiego, Twójwieś"
                 fill
                 quality={85}
-                className="object-contain"
+                className="object-cover object-center"
                 sizes="(max-width: 768px) 100vw, 50vw"
                 loading="lazy"
               />
