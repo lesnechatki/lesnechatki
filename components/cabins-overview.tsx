@@ -105,8 +105,8 @@ export function CabinsOverview() {
             >
               <Link href={cabin.href}>
                 <motion.div whileHover={{ y: -12 }} transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}>
-                  <Card className="overflow-hidden border border-border/30 hover:border-forest/30 transition-all duration-700 group cursor-pointer rounded-3xl shadow-lg hover:shadow-2xl hover:shadow-forest/10 bg-white/50 backdrop-blur-sm">
-                    <div className="relative h-80 overflow-hidden">
+                  <Card className="overflow-hidden border border-border/30 hover:border-forest/30 transition-all duration-700 group cursor-pointer rounded-3xl shadow-lg hover:shadow-2xl hover:shadow-forest/10 bg-white/50 backdrop-blur-sm !p-0 !gap-0">
+                    <div className="relative h-80 overflow-hidden rounded-t-3xl">
                       <motion.div
                         className="relative w-full h-full"
                         whileHover={{ scale: 1.08 }}
@@ -147,7 +147,7 @@ export function CabinsOverview() {
                       </motion.div>
                     </div>
 
-                    <div className="p-8 text-center bg-gradient-to-b from-white/80 to-sand/50 backdrop-blur-sm">
+                    <div className="p-8 text-center bg-gradient-to-b from-white/80 to-sand/50 backdrop-blur-sm rounded-b-3xl flex-1">
                       <h3 className="text-3xl font-bold text-forest mb-2 group-hover:text-forest-light transition-colors duration-300">
                         {cabin.name}
                       </h3>
