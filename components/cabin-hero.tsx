@@ -29,7 +29,7 @@ export function CabinHero({ cabin }: CabinHeroProps) {
     const imageFolder = cabin.imageFolder
     if (imageFolder === "lesnechatki.jodla") return "/lesnechatki.jodla/IMG_3620.webp"
     if (imageFolder === "lesnechatki.swierk") return "/lesnechatki.swierk/IMG_3853.webp"
-    if (imageFolder === "lesnechatki.sosna") return "/lesnechatki.sosna/IMG_1835.webp"
+    if (imageFolder === "lesnechatki.sosna") return "/lesnechatki.sosna/sosna.home.webp"
     if (imageFolder === "lesnechatki.modrzew") return "/lesnechatki.modrzew/IMG_1147.webp"
     return "/zdjecie-glowne.webp"
   }

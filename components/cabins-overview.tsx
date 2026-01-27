@@ -23,7 +23,7 @@ const cabins = [
   {
     name: "Sosna",
     description: "Dla 5-6 osób",
-    image: "/lesnechatki.sosna/IMG_1835.webp",
+    image: "/lesnechatki.sosna/sosna.home.webp",
     href: "/sosna",
   },
   {
