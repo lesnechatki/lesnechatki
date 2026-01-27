@@ -117,10 +117,11 @@ export function CabinsOverview() {
                           alt={`${cabin.name} - Leśne Chatki w Koniakowie`}
                           fill
                           quality={85}
-                          className="object-cover object-center"
+                          className="object-cover object-top"
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                           loading="lazy"
                         />
+                        <div className="absolute inset-0 bg-gradient-to-t from-forest/30 via-transparent to-transparent" />
                         <div className="absolute inset-0 bg-gradient-to-t from-forest/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                       </motion.div>
 
