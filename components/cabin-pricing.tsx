@@ -17,7 +17,7 @@ export function CabinPricing({ cabin }: CabinPricingProps) {
 
   if (cabin.comingSoon) {
     return (
-      <section ref={ref} className="py-24 bg-background">
+      <section id="cennik" ref={ref} className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-forest mb-4">Cennik</h2>
@@ -36,7 +36,7 @@ export function CabinPricing({ cabin }: CabinPricingProps) {
   const showCombinedOption = cabin.slug === "swierk" || cabin.slug === "sosna"
 
   return (
-    <section ref={ref} className="py-24 bg-background relative overflow-hidden">
+    <section id="cennik" ref={ref} className="py-24 bg-background relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-sand/20 to-background" />
 
       <div className="container mx-auto px-4 relative z-10">
