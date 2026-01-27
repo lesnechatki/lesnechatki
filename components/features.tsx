@@ -1,7 +1,7 @@
 "use client"
 
 import { motion, useInView } from "framer-motion"
-import { Trees, Droplets, PawPrint, Flame, Home } from "lucide-react"
+import { Trees, Droplets, PawPrint, Flame, Home, Car } from "lucide-react"
 import { useRef } from "react"
 
 const features = [
@@ -10,6 +10,7 @@ const features = [
   { icon: PawPrint, label: "Przyjazne psom", description: "Twój pupil mile widziany" },
   { icon: Flame, label: "Ognisko i grill", description: "Wieczory przy ogniu" },
   { icon: Home, label: "Kameralny kompleks", description: "Tylko 3 domki" },
+  { icon: Car, label: "Prywatny parking", description: "W cenie pobytu" },
 ]
 
 export function Features() {
@@ -56,7 +57,7 @@ export function Features() {
           />
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-10 max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10 max-w-7xl mx-auto">
           {features.map((feature, index) => (
             <motion.div
               key={index}

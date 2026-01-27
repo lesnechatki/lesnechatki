@@ -26,14 +26,13 @@ const cabins = [
     image: "/lesnechatki.sosna/IMG_1835.webp",
     href: "/sosna",
   },
-  // Modrzew - ukryty, odkomentować gdy będzie gotowy
-  // {
-  //   name: "Modrzew",
-  //   description: "Wkrótce",
-  //   image: "/lesnechatki.modrzew/IMG_1147.webp",
-  //   href: "/modrzew",
-  //   comingSoon: true,
-  // },
+  {
+    name: "Modrzew",
+    description: "Wkrótce",
+    image: "/lesnechatki.modrzew/IMG_1147.webp",
+    href: "/modrzew",
+    comingSoon: true,
+  },
 ]
 
 export function CabinsOverview() {
@@ -69,7 +68,7 @@ export function CabinsOverview() {
             className="inline-block mb-6"
           >
             <div className="forest-glass px-6 py-2 rounded-full text-forest text-sm font-medium border border-forest/20">
-              Trzy unikalne miejsca
+              Cztery unikalne miejsca
             </div>
           </motion.div>
 
