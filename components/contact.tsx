@@ -10,7 +10,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Phone, Mail, MapPin, Loader2 } from "lucide-react"
 
-const FORMSPREE_URL = "https://formspree.io/f/xpqrzprg"
+const FORMSPREE_URL = "https://formspree.io/f/xdazodwg"
 
 export function Contact() {
   const [formData, setFormData] = useState({
