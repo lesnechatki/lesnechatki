@@ -34,7 +34,7 @@ export function AboutLocation() {
           >
             <motion.div style={{ y: imageY }} className="absolute inset-0 -top-[20%] h-[120%]">
               <Image
-                src="/lesnechatki.okolica/IMG_3554.webp"
+                src="/lesnechatki.okolica/IMG_3529.webp"
                 alt="Koniaków - najwyżej położona wieś Beskidu Śląskiego, Twójwieś"
                 fill
                 quality={85}
