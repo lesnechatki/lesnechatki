@@ -4,12 +4,14 @@ import { cabinsData } from "@/lib/cabins-data"
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://lesnechatki.com"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const cabins = Object.values(cabinsData).map((cabin) => ({
-    url: `${baseUrl}/${cabin.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.8,
-  }))
+  const cabins = Object.values(cabinsData)
+    .filter((cabin) => !cabin.comingSoon)
+    .map((cabin) => ({
+      url: `${baseUrl}/${cabin.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    }))
 
   return [
     {
