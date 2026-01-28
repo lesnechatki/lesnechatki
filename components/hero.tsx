@@ -25,7 +25,7 @@ export function Hero() {
     >
       <motion.div style={{ y, scale }} className="absolute inset-0 z-0">
         <Image
-          src="/zdjecie-glowne.webp"
+          src="/homepage.webp"
           alt="Leśne Chatki w Koniakowie"
           fill
           priority
