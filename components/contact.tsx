@@ -3,11 +3,14 @@
 import type React from "react"
 
 import { useState } from "react"
+import { toast } from "sonner"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Phone, Mail, MapPin } from "lucide-react"
+import { Phone, Mail, MapPin, Loader2 } from "lucide-react"
+
+const FORMSPREE_URL = "https://formspree.io/f/xpqrzprg"
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -17,10 +20,47 @@ export function Contact() {
     phone: "",
     message: "",
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("Form submitted:", formData)
+    setIsSubmitting(true)
+
+    try {
+      const response = await fetch(FORMSPREE_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: `${formData.firstName} ${formData.lastName}`,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+        }),
+      })
+
+      if (response.ok) {
+        toast.success("Wiadomość wysłana!", {
+          description: "Dziękujemy za kontakt. Odpowiemy najszybciej jak to możliwe.",
+        })
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          message: "",
+        })
+      } else {
+        throw new Error("Błąd wysyłania")
+      }
+    } catch {
+      toast.error("Wystąpił błąd", {
+        description: "Nie udało się wysłać wiadomości. Spróbuj ponownie lub skontaktuj się telefonicznie.",
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -154,8 +194,19 @@ export function Contact() {
                 />
               </div>
 
-              <Button type="submit" className="w-full bg-forest hover:bg-forest/90 text-white rounded-full">
-                Wyślij wiadomość
+              <Button 
+                type="submit" 
+                className="w-full bg-forest hover:bg-forest/90 text-white rounded-full"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? (
+                  <>
+                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                    Wysyłanie...
+                  </>
+                ) : (
+                  "Wyślij wiadomość"
+                )}
               </Button>
             </form>
           </Card>
