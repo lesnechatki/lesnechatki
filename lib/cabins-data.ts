@@ -105,10 +105,10 @@ export const cabinsData: Record<string, CabinDetails> = {
       checkIn: "15:00-11:00",
     },
     pricing: [
-      { guests: "6 osób", price: "600 zł" },
+      { guests: "6 osób", price: "600,00 zł" },
       { guests: "4 osoby", price: "550,00 zł" },
       { guests: "3 osoby", price: "450,00 zł" },
-      { guests: "2 osoby", price: "350 zł" },
+      { guests: "2 osoby", price: "350,00 zł" },
     ],
     specialNote:
       "Jeden domek. Dwie niezależne przestrzenie. Możesz wynająć apartament Sosna osobno lub cały domek (Świerk i Sosna) razem z balią na wyłączność.",

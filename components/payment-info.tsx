@@ -20,7 +20,7 @@ export function PaymentInfo() {
 
             <div className="pt-4 border-t border-border/40">
               <p className="text-sm text-muted-foreground mb-2">Numer konta:</p>
-              <p className="text-xl font-bold text-forest font-mono">81 1050 1096 1000 0009 2833 2558</p>
+              <p className="text-xl font-bold text-forest">81 1050 1096 1000 0009 2833 2558</p>
             </div>
           </div>
         </Card>
