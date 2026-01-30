@@ -26,7 +26,7 @@ export async function generateMetadata(): Promise<Metadata> {
         "Leśne Chatki - miejsce stworzone do zwolnienia tempa, spacerów między drzewami i poranków bez planu. Domki w Koniakowie, najwyżej położonej wsi Beskidu Śląskiego.",
       images: [
         {
-          url: `${currentUrl}/og-image.png`,
+          url: `${currentUrl}/homepage.webp`,
           width: 1200,
           height: 630,
           alt: "Leśne Chatki - domki w lesie w Koniakowie, Beskidy",
@@ -38,7 +38,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title: "Leśne Chatki w Koniakowie | Domki w Beskidach",
       description:
         "Leśne Chatki - miejsce stworzone do zwolnienia tempa, spacerów między drzewami i poranków bez planu. Domki w Koniakowie, najwyżej położonej wsi Beskidu Śląskiego.",
-      images: [`${currentUrl}/og-image.png`],
+      images: [`${currentUrl}/homepage.webp`],
     },
     alternates: {
       canonical: currentUrl,

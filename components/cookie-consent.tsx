@@ -36,7 +36,7 @@ export function CookieConsent() {
           transition={{ type: "spring", damping: 25, stiffness: 300 }}
           className="fixed bottom-6 left-6 right-6 md:left-auto md:right-6 md:max-w-md z-50"
         >
-          <div className="glass-effect rounded-3xl p-6 shadow-2xl border border-white/20">
+          <div className="rounded-3xl p-6 shadow-2xl border border-border bg-background md:bg-white/10 md:backdrop-blur-md md:border-white/20">
             <div className="flex items-start justify-between gap-4 mb-4">
               <div className="flex-1">
                 <h3 className="font-semibold text-lg mb-2 text-foreground">Ciasteczka i prywatność</h3>
