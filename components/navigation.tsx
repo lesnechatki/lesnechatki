@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
-import Image from "next/image"
 import { Menu, X, ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { motion, AnimatePresence } from "framer-motion"
@@ -69,21 +68,16 @@ export function Navigation() {
     >
       <div className="container mx-auto px-4 py-5">
         <div className="flex items-center justify-between">
-          <Link href="/" className="relative group flex items-center" aria-label="Leśne Chatki - strona główna">
-            <motion.div
+          <Link href="/" className="relative group">
+            <motion.span
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
-              className="relative h-10 w-auto"
+              className={`text-2xl font-semibold transition-colors duration-300 ${
+                scrolled ? "text-forest" : "text-white drop-shadow-lg"
+              }`}
             >
-              <Image
-                src="/3.png"
-                alt="Leśne Chatki Koniaków"
-                width={160}
-                height={40}
-                className="h-10 w-auto object-contain object-left"
-                priority
-              />
-            </motion.div>
+              Leśne Chatki
+            </motion.span>
             <motion.div
               className="absolute -bottom-1 left-0 h-0.5 bg-forest"
               initial={{ width: 0 }}
